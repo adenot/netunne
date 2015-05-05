@@ -1,0 +1,5 @@
+INFO("Requesting License...")
+SERVERINFO("6c0fcd","Connected to Console License Center")
+SERVERERROR("6c0fcd","KEYERROR")
+
+/EOF/

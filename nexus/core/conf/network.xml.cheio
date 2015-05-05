@@ -1,0 +1,96 @@
+<network>
+	<interfaces>
+		<interface device="eth0">
+			<type>internal</type>
+			<assignment>dhcp</assignment>
+			<address>192.168.100.224</address>
+			<netmask>255.255.255.0</netmask>
+		</interface>
+		<interface device="eth9">
+			<type>sempre externo</type>
+			<assignment>adsl</assignment>
+			<username>user1</username>
+			<password>1234</password>
+		</interface>
+		<interface device="eth01">
+			<type>virtual</type>
+			<assignment>static</assignment>
+			<address>192.168.0.1</address>
+			<netmask>255.255.255.0</netmask>
+		</interface>
+		<interface device="eth1">
+			<type>external</type>
+			<assignment>static</assignment>
+			<address>139.82.111.153</address>
+			<gateway>139.82.111.1</gateway>
+			<netmask>255.255.255.0</netmask>
+			<weight>100</weight> 
+		</interface>
+		<interface device="eth2">
+			<type>internal</type>
+			<assignment>static</assignment>
+			<address>139.82.111.22</address>
+			<gateway>139.82.111.1</gateway>
+			<netmask>255.255.255.0</netmask>
+			<weight>200</weight>
+		</interface>		
+		<interface>
+			<device>eth3</device>
+			<type>external</type>
+			<assignment>dhcp</assignment>
+			<weight>200</weight>
+			<address>192.168.100.55</address>
+			<netmask>255.255.0.0</netmask>
+		</interface>		
+	</interfaces>
+	<dns>
+		<nameserver>192.168.100.101</nameserver>
+		<nameserver>192.168.100.102</nameserver>
+		<search>nit.com</search>
+		<search>nit.net</search>
+		<search>nit.org</search>
+	</dns>
+	<routes>
+		<route>
+			<source>192.168.0.0/24</source>
+			<interface>eth0</interface>
+		</route>
+		<route>
+			<source>192.168.100.0/10</source>
+			<interface>eth1</interface>
+		</route>
+	</routes>
+	<maps>
+		<map>
+			<from>interfaces.tpl</from>
+			<to>/tmp/interfaces</to>
+		</map>
+		<map>
+			<from>xdns.tpl</from>
+			<to>/etc/resolv.conf</to>
+		</map>
+		<map>
+			<from>dns.tpl</from>
+			<to>/tmp/resolv.conf</to>
+		</map>
+		<map>
+			<from>dns.tpl</from>
+			<to>/etc/resolv.conf</to>
+		</map>
+		<map>
+			<from>dns.tpl</from>
+			<to>/etc/resolv.conf</to>
+		</map>
+		<map>
+			<from>xinterfaces.tpl</from>
+			<to>/etc/network/interfaces</to>
+		</map>
+		<map>
+			<from>routes.tpl</from>
+			<to>/etc/nexus/conf/</to>
+		</map>
+	</maps>
+	<act>
+		<post>/etc/init.d/networking restart</post>
+	</act>
+</network>

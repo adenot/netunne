@@ -1,0 +1,5 @@
+NEXUS=/NEXUS/nexus/
+PHP=/usr/bin/php5.0
+CONN=127.0.0.1:26
+TYPE=local
+WEBADM=http://127.0.0.1/

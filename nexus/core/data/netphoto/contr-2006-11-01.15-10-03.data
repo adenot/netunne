@@ -1,0 +1,4 @@
+tcp      6 431804 ESTABLISHED src=192.168.100.12 dst=192.168.100.31 sport=1458 dport=445 packets=157 bytes=13857 src=192.168.100.31 dst=192.168.100.12 sport=445 dport=1458 packets=133 bytes=13991 [ASSURED] mark=0 use=1
+tcp      6 428865 ESTABLISHED src=192.168.100.41 dst=192.168.100.31 sport=1547 dport=22 packets=825 bytes=60297 src=192.168.100.31 dst=192.168.100.41 sport=22 dport=1547 packets=724 bytes=94577 [ASSURED] mark=0 use=1
+udp      17 6 src=192.168.100.3 dst=192.168.100.255 sport=138 dport=138 packets=3 bytes=612 [UNREPLIED] src=192.168.100.255 dst=192.168.100.3 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+tcp      6 431829 ESTABLISHED src=192.168.100.42 dst=192.168.100.31 sport=38994 dport=445 packets=425 bytes=40835 src=192.168.100.31 dst=192.168.100.42 sport=445 dport=38994 packets=585 bytes=659355 [ASSURED] mark=0 use=1

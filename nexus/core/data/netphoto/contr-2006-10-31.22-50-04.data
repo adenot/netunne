@@ -1,0 +1,5 @@
+tcp      6 57 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1953 dport=80 packets=53 bytes=10628 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1953 packets=55 bytes=9121 [ASSURED] mark=0 use=1
+tcp      6 91 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1954 dport=80 packets=53 bytes=10628 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1954 packets=54 bytes=8703 [ASSURED] mark=0 use=1
+tcp      6 430042 ESTABLISHED src=192.168.101.14 dst=192.168.100.31 sport=1255 dport=22 packets=439 bytes=34581 src=192.168.100.31 dst=192.168.101.14 sport=22 dport=1255 packets=395 bytes=62877 [ASSURED] mark=0 use=1
+tcp      6 431999 ESTABLISHED src=192.168.101.14 dst=192.168.100.31 sport=1956 dport=80 packets=44 bytes=8768 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1956 packets=43 bytes=7090 [ASSURED] mark=0 use=1
+tcp      6 23 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1952 dport=80 packets=53 bytes=10628 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1952 packets=54 bytes=9076 [ASSURED] mark=0 use=1

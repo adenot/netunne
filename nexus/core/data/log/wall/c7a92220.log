@@ -1,0 +1,6 @@
+INFO("Requesting License...")
+SERVERINFO("02ee3c","Connected to Console License Center")
+<br />
+<b>Warning</b>: openssl_seal() [<a href='function.openssl-seal'>function.openssl-seal</a>]: not a public key (0th member of pubkeys) in <b>/hermes/web07/b1304/pow.denotops/htdocs/center/license/cls_license.php</b> on line <b>180</b><br />
+
+/EOF/

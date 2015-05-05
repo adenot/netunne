@@ -1,0 +1,29 @@
+INFO("Aplicando Configurações...")
+RESULT("
+
+
+Stopping DHCP server: dhcp.
+Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.
+
+
+/NEXUS/nexus/core/data/squid-cache-eth1-12 is not a block special device.
+Proceed anyway? (y,n) Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+3072 inodes, 12288 blocks
+614 blocks (5.00%) reserved for the super user
+First data block=1
+2 block groups
+8192 blocks per group, 8192 fragments per group
+1536 inodes per group
+Superblock backups stored on blocks: 
+8193
+Writing inode tables: 0/21/2done 
+Creating journal (1024 blocks): done
+Writing superblocks and filesystem accounting information: done
+This filesystem will be automatically checked every 23 mounts or
+180 days, whichever comes first. Use tune2fs -c or -i to override.
+
+")
+/EOF/

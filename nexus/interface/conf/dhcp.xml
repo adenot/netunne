@@ -1,0 +1,45 @@
+<dhcp>
+	<config>
+		<option>
+			<name>default-lease-time</name>
+			<value>21600</value>
+
+		</option>
+		<option>
+			<name>max-lease-time</name>
+			<value>43200</value>
+
+		</option>
+		<autonetwork>no</autonetwork>
+
+	</config>
+	<networks>
+		<network>
+			<interface>eth0</interface>
+			<range>
+				<from>192.168.31.20</from>
+				<to>192.168.31.250</to>
+
+			</range>
+			<dnss>
+				<dns>`HOST.INTERFACE.eth0`</dns>
+
+			</dnss>
+
+		</network>
+		<network>
+			<interface>eth2</interface>
+			<range>
+				<from>192.168.100.20</from>
+				<to>192.168.100.250</to>
+
+			</range>
+			<dnss>
+				<dns>`HOST.INTERFACE.eth2`</dns>
+
+			</dnss>
+
+		</network>
+
+	</networks>
+</dhcp>

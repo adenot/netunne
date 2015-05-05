@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z $1 ]; then 
+exit
+fi
+
+echo "Contruindo TAR..."
+cd devel
+tar czvphf $1.tgz $1
+mv $1.tgz ..
+cd -
+#echo "Criptografando..."
+#./brc_crypto_file $1.tgz $1.npak NEO5401
+
+mv $1.tgz $1.npak
+mv $1.npak npak
+echo "Limpando..."
+rm -fr $1.tgz
+echo "Enviando pacote..."
+ncftpput -u cnnpak ftp.powweb.com ./ ./npak/$1.npak
+echo "Fim."

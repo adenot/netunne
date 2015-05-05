@@ -1,0 +1,12 @@
+<?php
+	/****************************************************************
+	*																*
+	* 			Console Tecnologia da Informação Ltda				*
+	* 				E-mail: contato@console.com.br					*
+	* 				Arquivo Criado em 19/06/2006					*
+	*																*
+	****************************************************************/
+
+include_once "lib_common.php";
+
+?>

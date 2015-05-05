@@ -1,0 +1,4 @@
+Package: base
+Version: 1.0
+Filename: base.npak
+Description: Pacote com os utilitários básicos para instalação dos outros pacotes

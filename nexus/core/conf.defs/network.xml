@@ -1,0 +1,22 @@
+<network>
+	<interfaces>
+		<interface>
+			<device>eth0</device>
+			<type>internal</type>
+			<assignment>static</assignment>
+			<address>ETHIP</address>
+			<netmask>ETHMASK</netmask>
+			<firewall>
+				<dhcp action="allow" />
+				<webadm action="logallow" />
+				<webuser action="allow" />
+				<dns action="allow" />
+				<ssh action="logallow" />
+			</firewall>
+	</interface>
+	</interfaces>
+	<dns>
+	</dns>
+	<routes>
+	</routes>
+</network>

@@ -1,0 +1,126 @@
+Descrição dos arquivos no projeto Nexus-Core
+-----------------------------------------------------
+- bin/
+		- 	listener_vars.pl - 10/10/2005 - versão 0.1
+			Repositório de váriáveis, mensagens padrão para descrição de erro e avisos do sistema
+
+		-	listener.pl - 10/10/2005 - versão 0.3
+			Módulo Listener - Responsável por criar socket e ouvir requisições de clientes
+
+		-	service.pl - 10/10/2005 - versão 0.1
+			Responsável por filtrar as requisições de serviços recebidas e direcionar o tratamento
+		
+		-	action.pl - 10/10/2005 - versão 0.1
+			Filtro de serviços - Responsável por filtrar as requisições de ações recebidas e direcionar o tratamento
+
+		-	common.pl - 14/10/2005 - versão 0.3
+			Subrotinas em Comum - Fornece ferramentas em comum para o sistema
+
+		-	in.pl - 10/10/2005 - versão 0.2
+			Filtro de entrada - Responsável por filtrar as requisições recebidas e direcionar o tratamento
+
+		-	out.pl - 10/10/2005 - versão 0.1
+			Responsável por formatar as respostas para as requisições recebidas
+			
+		-	monitor.pl - 10/10/2005 - versão 0.1
+			Módulo Monitor - Responsável monitorar arquivos e saída de comandos
+		
+		-	manager.pl - 10/10/2005 - versão 0.1
+			Módulo Manager - Responsável por gerenciar a execução dos outros módulos do sistema
+
+- lib/
+
+		-	Conf.pm - 02/11/2005 - versão 0.1
+			Classe para manipular arquivos de log - Fornece ferramentas em comum para o sistema
+
+		-	License.pm - 02/11/2005 - versão 0.1
+			Classe para validar e gerenciar a licensa de utilização do produto
+
+		-	Log.pm - 02/11/2005 - versão 0.1
+			Classe para manipular arquivos de log
+
+		-	Manager.pm - 02/11/2005 - versão 0.1
+			Classe gerenciar os processos e recursos do Core
+
+		-	Monitor.pm - 02/11/2005 - versão 0.1
+			Classe de monitoramento de arquivos e saída de comandos
+
+		-	Listener.pm - 02/11/2005 - versão 0.1
+			Classe criar e gerenciar os sockets
+			
+		-	Service.pm - 02/11/2005 - versão 0.1
+			Classe gerenciar os serviços
+
+		-	Message.pm  - 02/11/2005 - versão 0.1
+			Classe gerenciar Mensagens  do Core
+		
+		-	Message.pm  - 02/11/2005 - versão 0.1
+			Classe para manipular o repositório de mensagens do Core
+
+		-	Xml.pm - 02/11/2005 - versão 0.1
+			Classe para manipular arquivos XML
+
+- conf/
+
+		-	interfaces.route
+			
+		-	interfaces.weight
+		
+		-	lic.ctf
+		
+		-	listener.xml
+		
+		-	listener.xsd
+		
+		-	core.xml
+		
+		-	core.xsd
+
+- manager/
+
+	-	log/
+	
+		-	listener/
+				(12666.log, 12667.log, 12668.log ...)
+				
+		-	manager/
+		
+		-	monitor/
+		
+		-	service/
+		
+		
+	-	msg/
+	
+		-	msg.wall
+	
+		
+	-	run/
+		
+		-	listener/
+				(12666.log, 12667.log, 12668.log ...)
+				
+		-	manager/
+		
+		-	monitor/
+		
+		-	service/
+
+
+- locale/
+
+	-	pt/
+		
+		-	LC_MESSAGES
+		
+	-	it/	
+	-	fr/
+
+- service/
+	-	bandwidth/
+	-	network/
+		-	conf/
+		-	bin/
+		-	lib/
+		-	tpl
+

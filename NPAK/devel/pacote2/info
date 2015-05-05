@@ -1,0 +1,6 @@
+Product: 1
+Package: pacote2
+Version: 2
+Filename: pacote2.npak
+Description: Pacote para testes, escreve um arquivo /tmp/pacote2
+Description-Installed: descricao pos-instalado

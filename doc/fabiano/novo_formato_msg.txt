@@ -1,0 +1,13 @@
+----- BEGIN 200303030 -----
+Time = 39329239932
+Contexto = listener
+Acao = xxxx
+TipoMsg = akdmak
+TextoMsg = akdm
+adsdac
+dd
+ccd
+d
+cdacad
+cd
+----- END 200303030 -----

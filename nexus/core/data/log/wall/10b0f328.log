@@ -1,0 +1,14 @@
+INFO("Requesting Registry...")
+ï»¿ï»¿SERVERINFO("e4d897","Connected to Console License Center (@Brazil)")
+Array
+(
+ [maxusers] => 350
+ [maxguests] => 350
+ [maxlinks] => 10
+ [desc] => Plano Beta, 350 clientes e 350 créditos conectados simultâneos
+ [nick] => AUTO
+ [startdate] => 1177091986
+)
+OK("Registry Received Succefully")
+
+/EOF/

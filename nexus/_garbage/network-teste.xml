@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="network.xsd">
+	<interfaces>
+		<interface device="eth0">
+			<type>internal</type>
+			<assignment>static</assignment>
+			<address>192.168.100.254</address>
+			<netmask>255.255.255.0</netmask>
+			<network>255.255.255.0</network>
+			<gateway>139.82.111.01</gateway>
+			<weight>100</weight>
+		</interface>
+		<interface device="eth0">
+			<type>internal</type>
+			<assignment>static</assignment>
+			<address>192.168.100.254</address>
+			<netmask>255.255.255.0</netmask>
+			<network>255.255.255.0</network>
+			<gateway>139.82.111.01</gateway>
+			<weight>100</weight>
+		</interface>
+	</interfaces>
+</network>

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+if [ ! -f /NEXUS/nexus/core/data/cache-eth2-210 ]; then rm -fr /NEXUS/nexus/core/data/cache-eth2-*; /usr/sbin/oops -c oops-eth2.cfg -z; fi
+/usr/sbin/oops -xACDFHINS -c/etc/oops/oops-eth2.cfg -d &

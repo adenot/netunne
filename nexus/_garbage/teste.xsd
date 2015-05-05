@@ -1,0 +1,24 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">
+					Testando XML e Schemas
+					Fabiano Louback.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Teste" type="TesteTipo"/>
+		<xsd:complexType name="TesteTipo">
+			<xsd:sequence>
+					<xsd:element name="Contato" type="ContatoTipo"/>
+			</xsd:sequence>
+			<!-- <xsd:attribute name="TesteNum" type="xsd:integer" use="required"/> -->
+		</xsd:complexType>
+		<xsd:complexType name="ContatoTipo">
+			<xsd:sequence>
+					<xsd:element name="Nome"		type="xsd:string"/>
+					<xsd:element name="Rua"		type="xsd:string"/>
+					<xsd:element name="Cidade"	type="xsd:string"/>
+					<xsd:element name="Cep"		type="xsd:string"/>
+					<xsd:element name="UF"		type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+</xsd:schema>

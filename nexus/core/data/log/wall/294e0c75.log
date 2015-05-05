@@ -1,0 +1,7 @@
+INFO("Solicitando Registro...")
+﻿
+INFO("f97b13","Welcome")
+SERVERINFO("f97b13","Connected to Console License Center (@Brazil)")
+SERVERERROR("f97b13","INVALIDLICENSE")
+
+/EOF/

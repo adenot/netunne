@@ -1,0 +1,3 @@
+#: gettext.php:20
+msgid	"Good morning!"
+msgstr	"Bom-Dia!"

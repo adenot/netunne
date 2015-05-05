@@ -1,0 +1,6 @@
+udp      17 7 src=192.168.100.245 dst=192.168.100.255 sport=137 dport=137 packets=3 bytes=234 [UNREPLIED] src=192.168.100.255 dst=192.168.100.245 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+udp      17 7 src=192.168.100.2 dst=192.168.100.255 sport=137 dport=137 packets=3 bytes=234 [UNREPLIED] src=192.168.100.255 dst=192.168.100.2 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+udp      17 28 src=192.168.100.225 dst=192.168.100.255 sport=138 dport=138 packets=6 bytes=1395 [UNREPLIED] src=192.168.100.255 dst=192.168.100.225 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+udp      17 7 src=192.168.100.31 dst=192.168.100.245 sport=137 dport=137 packets=3 bytes=270 [UNREPLIED] src=192.168.100.245 dst=192.168.100.31 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+udp      17 8 src=192.168.100.3 dst=192.168.100.255 sport=137 dport=137 packets=27 bytes=2106 [UNREPLIED] src=192.168.100.255 dst=192.168.100.3 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+tcp      6 431648 ESTABLISHED src=192.168.100.42 dst=192.168.100.31 sport=38994 dport=445 packets=387 bytes=38859 src=192.168.100.31 dst=192.168.100.42 sport=445 dport=38994 packets=547 bytes=657227 [ASSURED] mark=0 use=1

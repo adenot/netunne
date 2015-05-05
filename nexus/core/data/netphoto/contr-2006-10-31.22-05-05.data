@@ -1,0 +1,20 @@
+tcp      6 86 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1722 dport=445 packets=13 bytes=1651 src=192.168.100.31 dst=192.168.101.14 sport=445 dport=1722 packets=11 bytes=1361 [ASSURED] mark=0 use=1
+tcp      6 11 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1711 dport=445 packets=22 bytes=3359 src=192.168.100.31 dst=192.168.101.14 sport=445 dport=1711 packets=20 bytes=2773 [ASSURED] mark=0 use=1
+udp      17 4 src=192.168.100.245 dst=192.168.100.255 sport=137 dport=137 packets=3 bytes=234 [UNREPLIED] src=192.168.100.255 dst=192.168.100.245 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+tcp      6 51 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1728 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1728 packets=3 bytes=144 mark=0 use=1
+udp      17 4 src=192.168.100.2 dst=192.168.100.255 sport=137 dport=137 packets=3 bytes=234 [UNREPLIED] src=192.168.100.255 dst=192.168.100.2 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+udp      17 4 src=192.168.100.31 dst=192.168.100.245 sport=137 dport=137 packets=3 bytes=270 [UNREPLIED] src=192.168.100.245 dst=192.168.100.31 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+tcp      6 77 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1720 dport=80 packets=36 bytes=4711 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1720 packets=54 bytes=54702 [ASSURED] mark=0 use=1
+tcp      6 33 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1712 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1712 packets=6 bytes=288 mark=0 use=1
+tcp      6 58 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1732 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1732 packets=2 bytes=96 mark=0 use=1
+tcp      6 50 TIME_WAIT src=127.0.0.1 dst=127.0.0.1 sport=55032 dport=26 packets=7 bytes=392 src=127.0.0.1 dst=127.0.0.1 sport=26 dport=55032 packets=5 bytes=284 [ASSURED] mark=0 use=1
+tcp      6 113 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1727 dport=445 packets=40 bytes=6401 src=192.168.100.31 dst=192.168.101.14 sport=445 dport=1727 packets=39 bytes=10272 [ASSURED] mark=0 use=1
+tcp      6 2 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1710 dport=80 packets=31 bytes=2927 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1710 packets=48 bytes=55204 [ASSURED] mark=0 use=1
+tcp      6 431827 ESTABLISHED src=192.168.101.14 dst=192.168.100.31 sport=1255 dport=22 packets=434 bytes=33373 src=192.168.100.31 dst=192.168.101.14 sport=22 dport=1255 packets=390 bytes=61109 [ASSURED] mark=0 use=1
+tcp      6 37 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1723 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1723 packets=4 bytes=192 mark=0 use=1
+tcp      6 55 TIME_WAIT src=127.0.0.1 dst=127.0.0.1 sport=55033 dport=26 packets=7 bytes=392 src=127.0.0.1 dst=127.0.0.1 sport=26 dport=55033 packets=5 bytes=284 [ASSURED] mark=0 use=1
+tcp      6 12 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1705 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1705 packets=6 bytes=288 mark=0 use=1
+tcp      6 431996 ESTABLISHED src=192.168.101.14 dst=192.168.100.31 sport=1731 dport=445 packets=22 bytes=3877 src=192.168.100.31 dst=192.168.101.14 sport=445 dport=1731 packets=20 bytes=3087 [ASSURED] mark=0 use=1
+tcp      6 32 SYN_RECV src=192.168.101.14 dst=192.168.100.31 sport=1716 dport=139 packets=1 bytes=48 src=192.168.100.31 dst=192.168.101.14 sport=139 dport=1716 packets=5 bytes=240 mark=0 use=1
+tcp      6 68 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1715 dport=445 packets=93 bytes=16314 src=192.168.100.31 dst=192.168.101.14 sport=445 dport=1715 packets=88 bytes=21155 [ASSURED] mark=0 use=1
+tcp      6 77 TIME_WAIT src=192.168.101.14 dst=192.168.100.31 sport=1721 dport=80 packets=7 bytes=875 src=192.168.100.31 dst=192.168.101.14 sport=80 dport=1721 packets=6 bytes=1324 [ASSURED] mark=0 use=1

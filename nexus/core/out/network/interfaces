@@ -1,0 +1,20 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+		iface eth0 inet static
+			address 192.168.31.1
+			netmask 255.255.255.0
+			network 192.168.31.0
+			broadcast 192.168.31.255
+			pre-up ifconfig eth0 down
+			pre-up if test -f /var/run/dhclient.eth0.pid ; then kill `cat /var/run/dhclient.eth0.pid`; rm -fr /var/run/dhclient.eth0.* ; fi
+auto eth1
+		iface eth1 inet static
+			address 192.168.100.31
+			netmask 255.255.255.0
+			network 192.168.100.0
+			broadcast 192.168.100.255
+			gateway 192.168.100.1
+			pre-up ifconfig eth1 down
+			pre-up if test -f /var/run/dhclient.eth1.pid ; then kill `cat /var/run/dhclient.eth1.pid`; rm -fr /var/run/dhclient.eth1.* ; fi

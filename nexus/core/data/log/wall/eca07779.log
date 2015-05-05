@@ -1,0 +1,5 @@
+INFO("Requesting License...")
+SERVERINFO("4ca296","Connected to Console License Center")
+SERVERERROR("4ca296","INVALIDLICENSE")
+
+/EOF/

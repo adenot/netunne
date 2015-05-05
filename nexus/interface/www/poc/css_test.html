@@ -1,0 +1,871 @@
+	
+<head>
+<link href="template.css" rel="stylesheet" type="text/css">
+<link href="http://www.fase.org.br/includes/galeria.css" rel="stylesheet" type="text/css">
+<title>Rede Brasileira Pela Integração dos Povos</title>
+<script language="JavaScript" src="../includes/mm_menu.js"></script>
+<script language="JavaScript">
+var coluna = '';
+function mmLoadMenus(){ 
+if (window.coluna1) return;
+
+window.coluna1 = new Menu("Quem Somos",215,19,"verdana",10,"#FFFFFF","#FFFFFF","#B22117","#B43027","left","middle",3,0,100,-5,7,true,true,true,0,true,true);
+coluna1.addMenuItem("Apresentação","location='menu.php?id=440&site=_rebrip&cd_site=20'");
+coluna1.addMenuItem("Estrutura","location='menu.php?id=441&site=_rebrip&cd_site=20'");
+coluna1.addMenuItem("Membros","location='menu.php?id=443&site=_rebrip&cd_site=20'");
+coluna1.addMenuItem("Colaboradores","location='menu.php?id=444&site=_rebrip&cd_site=20'");
+coluna1.hideOnMouseOut=true;
+coluna1.bgColor='#B22117';
+coluna1.menuBorder=1;
+coluna1.menuLiteBgColor='#B43027';
+coluna1.menuBorderBgColor='#970000';
+
+window.coluna2 = new Menu("Grupos de Trabalho",215,19,"verdana",10,"#FFFFFF","#FFFFFF","#B22117","#B43027","left","middle",3,0,100,-5,7,true,true,true,0,true,true);
+coluna2.addMenuItem("GT Agricultura","location='menu.php?id=445&site=_rebrip&cd_site=20'");
+coluna2.addMenuItem("GT Comércio e Meio Ambiente","location='menu.php?id=446&site=_rebrip&cd_site=20'");
+coluna2.addMenuItem("GT Gênero","location='menu.php?id=447&site=_rebrip&cd_site=20'");
+coluna2.addMenuItem("GT Parlamento","location='menu.php?id=454&site=_rebrip&cd_site=20'");
+coluna2.addMenuItem("GT Propriedade Intelectual","location='menu.php?id=455&site=_rebrip&cd_site=20'");
+coluna2.addMenuItem("GT Serviços","location='menu.php?id=456&site=_rebrip&cd_site=20'");
+coluna2.hideOnMouseOut=true;
+coluna2.bgColor='#B22117';
+coluna2.menuBorder=1;
+coluna2.menuLiteBgColor='#B43027';
+coluna2.menuBorderBgColor='#970000';
+
+window.coluna3 = new Menu("Observatório de Comércio",215,19,"verdana",10,"#FFFFFF","#FFFFFF","#B22117","#B43027","left","middle",3,0,100,-5,7,true,true,true,0,true,true);
+coluna3.addMenuItem("Boletim da REBRIP","location='menu.php?id=452&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("Seleção de Notícias","location='menu.php?id=453&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("ALCA","location='menu.php?id=461&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("Mercosul","location='menu.php?id=463&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("Mercosul - União Européia","location='menu.php?id=464&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("OMC","location='menu.php?id=465&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("Outros acordos comerciais","location='menu.php?id=466&site=_rebrip&cd_site=20'");
+coluna3.addMenuItem("Glossário","location='menu.php?id=546&site=_rebrip&cd_site=20'");
+coluna3.hideOnMouseOut=true;
+coluna3.bgColor='#B22117';
+coluna3.menuBorder=1;
+coluna3.menuLiteBgColor='#B43027';
+coluna3.menuBorderBgColor='#970000';
+
+window.coluna4 = new Menu("Declarações e Notas",215,19,"verdana",10,"#FFFFFF","#FFFFFF","#B22117","#B43027","left","middle",3,0,100,-5,7,true,true,true,0,true,true);
+coluna4.addMenuItem("REBRIP","location='menu.php?id=458&site=_rebrip&cd_site=20'");
+coluna4.addMenuItem("Parceiros","location='menu.php?id=459&site=_rebrip&cd_site=20'");
+coluna4.hideOnMouseOut=true;
+coluna4.bgColor='#B22117';
+coluna4.menuBorder=1;
+coluna4.menuLiteBgColor='#B43027';
+coluna4.menuBorderBgColor='#970000';
+
+window.coluna5 = new Menu("Publicações ",215,19,"verdana",10,"#FFFFFF","#FFFFFF","#B22117","#B43027","left","middle",3,0,100,-5,7,true,true,true,0,true,true);
+coluna5.addMenuItem("REBRIP","location='menu.php?id=529&site=_rebrip&cd_site=20'");
+coluna5.addMenuItem("Outras","location='menu.php?id=531&site=_rebrip&cd_site=20'");
+coluna5.hideOnMouseOut=true;
+coluna5.bgColor='#B22117';
+coluna5.menuBorder=1;
+coluna5.menuLiteBgColor='#B43027';
+coluna5.menuBorderBgColor='#970000';
+
+coluna5.writeMenus();}
+ </script><script language="javascript" src="../includes/js_evento.js"></script>
+<script language="javascript" src="../includes/js_util.js"></script>
+<script language="javascript" src="../includes/js_mascara.js"></script>
+
+<script>
+function Banners(DIV) {
+	var MNews = new Array();
+	MNews[0]= "<a href='http://www.devp.org' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060306_151116.jpg'  border='0'    title=''  class=''></a>";
+	MNews[1]= "<img src='http://www.fase.org.br/noar/anexos/banner/10_20060206_114028.gif'  border='0'    title=''  class=''>";
+	MNews[2]= "<a href='http://www.eed.de' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060306_151153.jpg'  border='0'    title=''  class=''></a>";
+	MNews[3]= "<a href='http://www.fastenopfer.ch' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060306_151244.jpg'  border='0'    title=''  class=''></a>";
+	MNews[4]= "<a href='http://www.icco.nl/delivery/icco.pt' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060306_151328.jpg'  border='0'    title=''  class=''></a>";
+	MNews[5]= "<a href='http://www.novib.nl' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060306_151400.jpg'  border='0'    title=''  class=''></a>";
+	MNews[6]= "<a href='http://www.alop.or.cr/' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060206_114136.gif'  border='0'    title=''  class=''></a>";
+	MNews[7]= "<a href='http://www.abong.org.br/' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060206_114123.gif'  border='0'    title=''  class=''></a>";
+	MNews[8]= "<a href='http://www.asc-hsa.org' class='' title=''  target='_blank' style='' ><img src='http://www.fase.org.br/noar/anexos/banner/10_20060309_110546.jpg'  border='0'    title=''  class=''></a>";
+	while((Numero = parseInt( Math.random() * MNews.length )) == ultimo);
+		document.getElementById('divBanner').innerHTML = MNews[Numero];
+	setTimeout("Banners()",5000);
+	return true;
+}
+
+</script>
+<style>
+input.botao {
+ border:0;
+ width:12px;
+ height:12px;
+}
+ #divBanner {
+ padding-bottom:15px;
+ padding-top:15px;
+ vertical-align:bottom;
+}
+</style>
+</head>
+
+<body id="body"  onLoad="start(); MM_preloadImages('http://www.fase.org.br/noar/anexos/banner/10_20060306_151116.jpg','http://www.fase.org.br/noar/anexos/banner/10_20060206_114028.gif','http://www.fase.org.br/noar/anexos/banner/10_20060306_151153.jpg','http://www.fase.org.br/noar/anexos/banner/10_20060306_151244.jpg','http://www.fase.org.br/noar/anexos/banner/10_20060306_151328.jpg','http://www.fase.org.br/noar/anexos/banner/10_20060306_151400.jpg','http://www.fase.org.br/noar/anexos/banner/10_20060206_114136.gif','http://www.fase.org.br/noar/anexos/banner/10_20060206_114123.gif','http://www.fase.org.br/noar/anexos/banner/10_20060309_110546.jpg')"> 
+<script language="JavaScript1.2">mmLoadMenus();</script><table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr height="10">
+    <td><a href="index.php"><img src="images/img_top.jpg" border="0"></a></td>
+  </tr>
+   <tr height="21">
+    <td height="21" id="menu-td" background="http://www.fase.org.br/_rebrip/images/img_menu_bg.gif" style="background-repeat:repeat-x"><table width='100%' height='10' align='left' class='semborda' border='0' cellpadding='0' cellspacing='0' style='padding-right:5px'>
+
+		<tr valign="middle" height="">
+<td align="center" name="coluna1" id="coluna1" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan="" onMouseOver="MM_showMenu(window.coluna1,0,16,null,'coluna1')" onMouseOut="MM_startTimeout();" onClick="location.href='menu.php?id=434'">Quem Somos</td>
+<td align="center" name="" id="" height="10" class="menu_coluna" valign="middle" width="7" style="padding-top:2px" colspan="" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_menu_separador.gif"  border="0"    title=""  class=""></td>
+<td align="center" name="coluna2" id="coluna2" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan="" onMouseOver="MM_showMenu(window.coluna2,0,16,null,'coluna2')" onMouseOut="MM_startTimeout();" onClick="location.href='menu.php?id=435'">Grupos de Trabalho</td>
+<td align="center" name="" id="" height="10" class="menu_coluna" valign="middle" width="7" style="padding-top:2px" colspan="" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_menu_separador.gif"  border="0"    title=""  class=""></td>
+<td align="center" name="coluna3" id="coluna3" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan="" onMouseOver="MM_showMenu(window.coluna3,0,16,null,'coluna3')" onMouseOut="MM_startTimeout();" onClick="location.href='menu.php?id=436'">Observatório de Comércio</td>
+<td align="center" name="" id="" height="10" class="menu_coluna" valign="middle" width="7" style="padding-top:2px" colspan="" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_menu_separador.gif"  border="0"    title=""  class=""></td>
+<td align="center" name="coluna4" id="coluna4" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan="" onMouseOver="MM_showMenu(window.coluna4,0,16,null,'coluna4')" onMouseOut="MM_startTimeout();" onClick="location.href='menu.php?id=437'">Declarações e Notas</td>
+<td align="center" name="" id="" height="10" class="menu_coluna" valign="middle" width="7" style="padding-top:2px" colspan="" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_menu_separador.gif"  border="0"    title=""  class=""></td>
+<td align="center" name="coluna5" id="coluna5" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan="" onMouseOver="MM_showMenu(window.coluna5,0,16,null,'coluna5')" onMouseOut="MM_startTimeout();" onClick="location.href='menu.php?id=438'">Publicações </td>
+<td align="center" name="" id="" height="10" class="menu_coluna" valign="middle" width="7" style="padding-top:2px" colspan="" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_menu_separador.gif"  border="0"    title=""  class=""></td>
+
+<td align="center" name="coluna6" id="coluna6" height="10" class="menu_coluna" valign="middle" width="" style="cursor:pointer" colspan="" rowspan=""  onClick="location.href='menu.php?id=439'">Contatos</td>
+</tr>
+</table>
+</td>
+  </tr>
+  <tr>
+  	<td>
+ <table width="779" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+
+      <tr class="principal">
+        <td rowspan="2" valign="top" style="padding-left:3px">
+			<table width="580"  border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="TituloPagina">MESES ANTERIORES 2006</td>
+
+        </tr>
+        <tr>
+          <td class="resumoPagina"></td>
+        </tr>
+        <tr>
+          <td class="textoPagina"><p align="center">&nbsp;</p>
+<center></center>
+<p align="left"><font color="#333399" size="1"><strong>JUNHO</strong></font></p>
+<p align="left">
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+
+    <tbody>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/06-Junho/clipping 01-06-2006.doc">1</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/06-Junho/clipping 02-06-2006.doc">2</a></font></p>
+            </td>
+
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 05-06-2006.doc">5</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/06-Junho/clipping 06-06-2006.doc">6</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/06-Junho/clipping 07-06-2006.doc">7</a></font></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">8</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">9</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">12</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">13</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">14</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">19</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1">20</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/06-Junho/clipping 21-06-2006.doc">21</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">22</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">23</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">26</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">27</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">28</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1">29</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">30</font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font><font color="#333399" size="1"><strong>MAIO</strong></font></p>
+<div align="left">
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+    <tbody>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 02-05-2006.doc">2</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 03-05-2006.doc">3</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 04-05-2006.doc">4</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 05-05-2006.doc">5</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 08-05-2006.doc">8</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 09-05-2006.doc">9</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 10-05-2006.doc">10</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">11</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 12-05-2006.doc">12</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 15-05-2006.doc">15</a></font></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 16-05-2006.doc">16</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 17-05-2006.doc">17</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">18</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">19</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">22</font></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">23</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">24</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 25-06-2006.doc">25</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 26-05-2006.doc">26</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 29-05-2006.doc">29</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 30-05-2006.doc">30</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/05-Maio/clipping 31-05-2006.doc">31</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">&nbsp;</font></p>
+            </td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font color="#333399" size="1"><strong>ABRIL&nbsp;</strong></font></p>
+<center>
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+    <tbody>
+        <tr>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 03-04-2006.doc">3</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 04-04-2006.doc">4</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 05-04-2006.doc">5</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 06-04-2006.doc">6</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">7</font></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">10</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">11</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 12-04-2006.doc">12</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 13-04-2006.doc">13</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 17-04-2006.doc">17</a></font></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 18-04-2006.doc">18</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 19-04-2006.doc">19</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 20-04-2006.doc">20</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">24</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1">25</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 26-04-2006.doc">26</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 27-04-2006.doc">27</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/04-Abril/clipping 28-04-2006.doc">28</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">&nbsp;</font></p>
+            </td>
+
+            <td valign="middle" width="20%">
+            <p align="left"><font size="1">&nbsp;</font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</center>
+<div align="left"><font size="1">&nbsp;</font></div>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1"><font color="#333399"><strong>MAR&Ccedil;O</strong>&nbsp;</font></font></p>
+
+<div align="left">
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+    <tbody>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">1</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">2</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">3</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">6</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">7</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">8</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">9</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 10-03-2006.doc">10</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 13-03- 2006.doc">13</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 14-03-2006.doc">14</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 15-03-2006.doc">15</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">16</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">17</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 20-03-2006.doc">20</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 21-03-2006.doc">21</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 22-03-2006.doc">22</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 23-03-2006.doc">23</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 24-03-2006.doc">24</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/03-Março/clipping 27-03-2006.doc">27</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">28</font></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">29</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">30</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">31</font></p>
+            </td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font color="#333399" size="1"><strong>FEVEREIRO&nbsp;</strong></font></p>
+<div align="left">
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+    <tbody>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 01-02-2006.doc">1</a></font></p>
+            </td>
+
+            <td valign="middle" width="20%">
+            <p><font size="1">2</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">3</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 06-02-2006.doc">6</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">7</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">8</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 09-02-2006.doc">9</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">10</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">13</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 14-02-2006.doc">14</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 15-02-2006.doc">15</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">16</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 17-02-2006.doc">17</a></font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/02-Fevereiro/clipping 20-02-2006.doc">20</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">21</font></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/02-Fevereiro/clipping 22-02-2006.doc">22</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">23</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="http://www.fase.org.br/noar/anexos/acervo/20_clipping 24-02-2006.doc">24</a></font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">27</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">28</font></p>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font size="1">&nbsp;</font></p>
+<p align="left"><font color="#333399" size="1"><strong>JANEIRO</strong></font></p>
+<div align="left">
+<table cellspacing="1" cellpadding="1" width="200" align="left" border="1">
+    <tbody>
+
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">2</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">3</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">4</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">5</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">6</font></p>
+
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">9</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">10</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">11</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">12</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1"><a href="/projetos/clientes/noar/noar/UserFiles/20/File/Seleção de notícias/01-Janeiro/clipping13-01-2006.doc">13</a></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">16</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">17</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">18</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">19</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">20</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+            <p><font size="1">23</font></p>
+
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">24</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">25</font></p>
+            </td>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">26</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">27</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" width="20%">
+
+            <p><font size="1">30</font></p>
+            </td>
+            <td valign="middle" width="20%">
+            <p><font size="1">31</font></p>
+            </td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+            <td valign="middle" width="20%"><font size="1">&nbsp;</font></td>
+
+        </tr>
+    </tbody>
+</table>
+</div>
+<p align="left"><font size="1">&nbsp;</font></p></td>
+        </tr>
+        <tr>
+          <td class="voltar"><a href="#" class="" title="" onClick="javascript:history.back()" target="_self" style="" ><img src="http://www.fase.org.br/_rebrip/images/icon_voltar.gif"  border="0"    title=""  class=""></a></td>
+        </tr>
+      </table>
+
+		</td>
+        <td width="189" class="lateral" valign="top" style="padding-top:10px">
+			<img src="http://www.fase.org.br/noar/images/spacer.gif"  border="0"  width="100%" height="7" title=""  class=""><table width='86%' height='30' align='right' class='semborda' border='0' cellpadding='0' cellspacing='0' style=''>
+		<form name='frm_busca' method='get' action='busca.php' enctype='' target=''>
+<tr valign="middle" height="">
+<td align="" name="" id="" height="5" class="" valign="middle" width="" style="padding-left:1px" colspan="2" rowspan="" ><img src="http://www.fase.org.br/_rebrip/images/img_busca_titulo.gif"  border="0"    title=""  class=""></td>
+</tr>
+<tr valign="middle" height="">
+<td align="" name="" id="" height="26" class="" valign="middle" width="" style="" colspan="" rowspan="" ><input type='text' name='valor_pesquisa' id='valor_pesquisa'     style="width:100%; " value='' ></td>
+<td align="left" name="" id="" height="26" class="" valign="middle" width="30" style="padding-left:5px" colspan="" rowspan="" ><input type="image" src="http://www.fase.org.br/_rebrip/images/icon_busca_lupa.gif" width="10" height="10" class="botao" name="img_busca" id="img_busca" ></td>
+</tr>
+</form>
+</table>
+
+<br>
+<br>
+			<br>
+          	<table align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><img src="images/img_agenda_titulo.gif"></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="178" height="114" border="0" align="center" cellpadding="0" cellspacing="0" background="images/img_agenda_bg.gif">
+      <tr>
+
+        <td align="center" valign="top"><table width='' height='' align='center' class='' border='0' cellpadding='0' cellspacing='0' style=''>
+		<tr valign="middle" height="">
+<td align="center" name="" id="" height="26" class="mes" valign="middle" width="" style="" colspan="7" rowspan="" >Julho</td>
+</tr>
+<tr valign="middle" height="">
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >D</td>
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >S</td>
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >T</td>
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >Q</td>
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >Q</td>
+
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >S</td>
+<td align="" name="" id="" height="26" class="diaSemana" valign="middle" width="" style="" colspan="" rowspan="" >S</td>
+</tr>
+<tr valign="middle" height="">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >&nbsp;</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >1</td>
+</tr>
+<tr valign="middle">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >2</td>
+
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >3</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >4</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >5</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >6</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >7</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >8</td>
+</tr>
+<tr valign="middle">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >9</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >10</td>
+
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >11</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >12</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >13</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >14</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >15</td>
+</tr>
+<tr valign="middle">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >16</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >17</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >18</td>
+
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >19</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >20</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >21</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >22</td>
+</tr>
+<tr valign="middle">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >23</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >24</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >25</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >26</td>
+
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >27</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >28</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >29</td>
+</tr>
+<tr valign="middle">
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >30</td>
+<td align="" name="" id="" height="26" class="diaMes" valign="middle" width="18" style="" colspan="" rowspan="" >31</td>
+</tr>
+</table>
+</td>
+      </tr>
+
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><a href="agendaCompleta.php"><img src="images/img_agenda_completa.gif" border="0"></a></td>
+  </tr>
+</table>
+			<img src="http://www.fase.org.br/noar/images/spacer.gif"  border="0"  width="100%" height="15" title=""  class=""><table width='100%' height='' align='' class='semborda' border='0' cellpadding='0' cellspacing='0' style=''>
+		<tr valign="middle" height="">
+<td align="center" name="" id="" height="26" class="" valign="middle" width="" style="" colspan="" rowspan="" ><a href="http://www.asc-hsa.org" class="" title=""  target="_blank" style="" ><img src="http://www.fase.org.br/noar/anexos/banner/20_20051025_171137.jpg"  border="0"    title=""  class=""></a></td>
+</tr>
+
+<tr valign="middle" height="">
+<td align="" name="" id="" height="7" class="" valign="middle" width="" style="" colspan="" rowspan="" ><img src="http://www.fase.org.br/noar/images/spacer.gif"  border="0"  width="100%" height="7" title=""  class=""></td>
+</tr>
+<tr valign="middle" height="">
+<td align="center" name="" id="" height="26" class="" valign="middle" width="" style="" colspan="" rowspan="" ><a href="http://www.jubileubrasil.com.br" class="" title=""  target="_blank" style="" ><img src="http://www.fase.org.br/noar/anexos/banner/20_20051025_171541.gif"  border="0"    title=""  class=""></a></td>
+</tr>
+<tr valign="middle" height="">
+<td align="" name="" id="" height="7" class="" valign="middle" width="" style="" colspan="" rowspan="" ><img src="http://www.fase.org.br/noar/images/spacer.gif"  border="0"  width="100%" height="7" title=""  class=""></td>
+</tr>
+</table>
+</td>
+      </tr>
+      <tr height="70">
+        <td class="lateral" valign="bottom" align="right" style="padding-right:10px">
+
+        	<a href="http://www.console.com.br" class="" title=""  target="_blank" style="" ><img src="http://www.fase.org.br/_rebrip/images//img_assinatura.jpg"  border="0"    title=""  class=""></a>        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+ 
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" class="principal">
+   <tr>
+    <td height="21" background="http://www.fase.org.br/_rebrip/images/img_rodape.gif" style="padding:5 15 0 15" valign="middle">
+	<img src="http://www.fase.org.br/_rebrip/images/img_rodape_esquerda.gif" align="left">
+
+	<img src="http://www.fase.org.br/_rebrip/images/img_rodape_direita.gif" align="right">
+	</td>
+  </tr>
+  <table>
+
+		</td>
+	</tr>
+</table>
+<script>carrega(document.getElementById('divBanner'))</script>
+</body>
+
+</html>

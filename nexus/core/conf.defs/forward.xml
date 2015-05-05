@@ -1,0 +1,23 @@
+<forward>
+<config>
+	<idle>1200</idle>
+	<noauth>1</noauth>
+</config>
+<guestconfig>
+	<idle>180</idle>
+</guestconfig>
+<users>
+</users>
+<traffics>
+</traffics>
+<limits>
+</limits>
+<acls>
+</acls>
+<plans>
+</plans>
+<rules>
+</rules>
+<pools>
+</pools>
+</forward>

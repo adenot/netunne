@@ -1,0 +1,108 @@
+<?php
+
+ignore_user_abort(true);
+set_time_limit(0);
+
+// Date in the past
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+
+// always modified
+//header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+
+// HTTP/1.1
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+
+// HTTP/1.0
+header("Pragma: no-cache");
+
+$url = $_POST[url];
+$user = $_POST[username];
+$pass = $_POST[password];
+$key = $_POST["key"];
+
+include "../nlib/lib_common.php";
+$custom = parse_ini_file(DIRSET."settings.ini",1);
+$custom=$custom[custom];
+
+if ($_POST[func]=="auth") {
+		$ip = $_SERVER["REMOTE_ADDR"];
+		
+		$conn = new Conn();
+		$out = $conn->command(message::generate_function("CHECKUSER",$user,$pass,$ip));
+		//echo $out;
+		$out = message::has_function($out,"RESULT");
+		if ($out!=FALSE) {
+			if (trim(strtoupper($out[0]))=="USERFAIL") {
+				$msg = _("Invalid User");
+			} else if (trim(strtoupper($out[0]))=="FAIL") {
+				$msg = _("Incorrect Password");
+			} else if (trim(strtoupper($out[0]))=="TRYAGAIN") {
+				$msg = _("Error: Please Try Again");
+			} else if (trim(strtoupper($out[0]))=="OUTLIMIT") {
+				$msg = _("Quota Exceed");
+			} else if (trim(strtoupper($out[0]))=="PPPOEONLY") {
+				$msg = _("User cannot login: PPPoE only");
+			} else if (trim(strtoupper($out[0]))=="OK") {
+				$redir = $url;
+			}
+		} else {
+			$msg = _("Error: Contact the system administrator");
+		}
+} else if ($_POST[func]=="guest") {
+		$ip = $_SERVER["REMOTE_ADDR"];
+		$conn = new Conn();
+		$out = $conn->command(message::generate_function("CHECKGUEST",$key,$ip));
+		//echo $out;	
+		$out = message::has_function($out,"RESULT");
+		if ($out!=FALSE) {
+			if (trim(strtoupper($out[0]))=="FAIL") {
+				$msg = _("Incorrect Password");
+			} else if (trim(strtoupper($out[0]))=="OK") {
+				$redir = $url;
+			}
+		} else {
+			$msg = _("Error: Contact the system administrator");
+		}
+}
+/*
+ * PRECISA DIZER.. AGUARDE, REDIRECIONANDO
+ * Quando existe a variavel $redir
+ */
+
+?>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<TITLE><?=sprintf(_("%s Autentication"),constant("PRODNAME"))?></TITLE>
+<BODY>
+<?=$msg?>
+<FORM method="POST" action="/form.php">
+<input type=hidden name="func" value="auth">
+<input type=hidden name="url" value="<?=$url?>">
+<?=_("Username")?> <INPUT TYPE=textbox name="username" size=30><br>
+<?=_("Password")?> <INPUT TYPE=passbox name="password" size=30><br>
+<INPUT type="submit" value="<?=_("Log In")?>">
+</FORM>
+<HR>
+<FORM method="POST" action="/form.php">
+<input type=hidden name="func" value="guest">
+<input type=hidden name="url" value="<?=$url?>">
+<?=_("Key")?> <INPUT TYPE=textbox name="key" size=30><br>
+<INPUT type="submit" value="<?=_("Log In")?>">
+</FORM>
+</BODY>
+<?php
+print_r($custom[custom]);
+
+if ($redir) {
+?>
+<script language="JavaScript">
+location.href='<?=urldecode($redir)?>';
+</script>
+<?
+}
+flush();
+?>
+</HTML>

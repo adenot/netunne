@@ -1,0 +1,35 @@
+Core Todo Notes:
+----------------------------
+01. Common etc
+			(01). Precisamos de uma classe FormataSaida para ser usada nos módulos networkpm, squid.pm e etc.
+			(02). Atualizar e Traduzir Menssagens de erro
+02. Manager
+			(01). saber quais são os pids rodando por módulo
+			(02). Idenfificar se algum pid travado esta efetuando lock de arquivo
+			(03). Reiniciar um modulo caso seja detectado travamento (pai principalmente)
+03. Listener
+	00. PO (Traduções)
+			(OK). Estudar função gettext da biblioteca do po
+			(OK). As mensagens tem que estar todas em inglês
+			(01). Verificar por que funcionou na máquina do Allan mas não funcionou na minha máquina
+	01. log
+			(OK). Ao iniciar tem que limpar arquivos de pid do proc
+			(OK). Criar um arquivo de log do "core" que vai guardar informações semelhante 
+				 	ao syslog do unix. ele vai escrever no var/log do linux e em inglês passando o hostname do servidor junto 
+				 	estudar syslog do perl
+	01. Configurações
+			(OK). Aceitar somente conexões da máquina local
+	01. core-XML-preparation
+			(01). escrever estrutura de xml
+			(02). escrever dtd ou xsd para estruturas definidas 
+	02. core-XML-tool
+			(...). criar classe comum para mexer com essas coisas
+			(OK). verificar se o arquivo xml existe e não está vazio
+			(OK). verificar se o xml é bem formado
+			(OK). verificar se o xml atende as regras de dtd ou xsd 	
+04. Monitor
+	01. Arquivos
+			(01). Lista dos recursos (arquivos, etc) a serem monitorados
+			(02). Cada filho do monitor vai monitorar um recurso específico
+notas:
+cpuinfo devices dms interrupts iomem ioports pci

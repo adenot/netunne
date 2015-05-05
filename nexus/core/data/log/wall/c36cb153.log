@@ -1,0 +1,11 @@
+INFO("Pinging 686786...")
+RESULT("PING 686786 (0.10.122.194): 56 data bytes
+ping: wrote 686786 64 chars, ret=-1
+ping: wrote 686786 64 chars, ret=-1
+ping: wrote 686786 64 chars, ret=-1
+ping: wrote 686786 64 chars, ret=-1
+
+--- 686786 ping statistics ---
+4 packets transmitted, 0 packets received, 100% packet loss
+")
+/EOF/

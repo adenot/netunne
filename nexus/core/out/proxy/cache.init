@@ -1,0 +1,45 @@
+#!/bin/bash
+
+if [ "$1" == "clean" ]; then
+	killall -9 /usr/sbin/squid3
+	umount /NEXUS/nexus/core/data/squid-cache
+	
+	rm -fr /NEXUS/nexus/core/data/squid-cache-*
+fi
+
+# se nao existe, tenho q parar o squid e criar
+if [ ! -f /NEXUS/nexus/core/data/squid-cache-230 ]; then
+
+	#apagando cache antigo
+	rm -fr /NEXUS/nexus/core/data/squid-cache-*
+
+	mkdir -p /NEXUS/nexus/core/data/squid-cache
+
+	#matando o squid
+	#kill `cat /var/run/squid3.pid`
+	#rm -fr /var/run/squid3.pid
+	killall -9 /usr/sbin/squid3
+	
+	#fuser -k -c /NEXUS/nexus/core/data/squid-cache    # tah matando geral.. (serialkiller?)
+	
+	umount /NEXUS/nexus/core/data/squid-cache
+
+	#criando a imagem
+	dd if=/dev/zero of=/NEXUS/nexus/core/data/squid-cache-230 bs=1M count=230
+	yes|mkfs.ext3 /NEXUS/nexus/core/data/squid-cache-230
+	rm -fr /var/spool/squid3
+	ln -s /NEXUS/nexus/core/data/squid-cache/ /var/spool/squid3
+	
+	#montando
+	mount -t ext3 -oloop /NEXUS/nexus/core/data/squid-cache-230 /NEXUS/nexus/core/data/squid-cache/
+	chown -R proxy.proxy /NEXUS/nexus/core/data/squid-cache/
+	
+	#dizendo pro squid criar o cache
+	squid3 -z
+	
+fi
+
+if [ ! -d /NEXUS/nexus/core/data/squid-cache/lost+found ]; then
+	mount -t ext3 -oloop /NEXUS/nexus/core/data/squid-cache-230 /NEXUS/nexus/core/data/squid-cache/		
+fi
+#cachesize precisa ser 15% maior q o tamanho q vai ser usado no squid

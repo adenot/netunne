@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="Expires" content="Sun, 31 Oct 2004 23:59:00 GMT" />
+<meta HTTP-EQUIV="Pragma" content="no-cache" />
+<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+<title>{window_title}</title>
+<style>
+html {
+	height:100%;
+	width:100%;
+}
+body {
+	margin:0px;
+	height:100%;
+}
+td.logo {
+	padding-top:25px;
+	padding-bottom:15px;
+	padding-left:25px;
+	vertical-align:top;
+}
+td.text {
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold;
+	text-align:justify;
+	vertical-align:top;
+	color:#505050;
+}
+td.alert {
+	padding-left:0px;
+	padding-right:0px;
+	font-family:Verdana;
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+	vertical-align:top;
+	color:#505050;
+}
+td.bottom {
+	padding-top:25px;
+	text-align:center;
+	vertical-align:top;
+}
+td.title {
+	color:#FFFFFF;
+	font-family:verdana;
+	font-size:12px;
+	font-weight:bold;
+}
+td.login {
+	color:#003b87;
+	text-align:right;
+	font-family:verdana;
+	font-size:11px;
+}
+input.login {
+	border:1px solid #083e87;
+	height:17px;
+	width:100px;
+	font-size:10px;
+	color:#003b87;
+	padding-left:3px;
+}
+td.button {
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:25px;
+	cursor:pointer;
+}
+td.buttonTXT {
+	text-align:center;
+	color:#FFFFFF;
+	font-size:9px;
+	font-family:verdana;
+	font-weight:bold;
+	cursor:pointer;
+}
+td.goto_url {
+	font-size:14px;
+	font-family:verdana;
+	font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+	<table width="618" align=center border="0" cellpadding="0" cellspacing="0">
+      <tr height="30">
+        <td class="logo"><img src="logo/{logo_img}" /></td>
+      </tr>
+
+      <tr height="30">
+        <td align="center" valign="top" style="padding:15px" colspan=2>
+		<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="15"><img src="theme/{theme}/img_qd1_top.gif" width="618" height="15" /></td>
+            </tr>
+            <tr>
+              <td valign="top" background="theme/{theme}/img_qd1_mid.gif" class="text"> {welcome_message} </td>
+            </tr>
+            <tr>
+              <td height="16"><img src="theme/{theme}/img_qd1_bot.gif" width="618" height="16" /></td>
+            </tr>
+        </table></td>
+	  </tr>
+      <tr>
+      	<td align="center" valign="top">
+      		<table width="223" border="0" align="center" cellpadding="0" cellspacing="0">
+      			<tr>
+	      			<td height="76" background="theme/{theme}/box_1.gif" align="left" valign="top" class="title" style="background-repeat:no-repeat">
+		      			<div style="overflow:hidden;text-align:right;width:200px;padding-top:20px;">{customer_title1}</div>
+    	  			</td>
+      			</tr>
+      			<tr>
+      				<td background="theme/{theme}/box_2.gif" >
+						<form action="{frm_customer1}" method="post" name="frm_customer1" id="frm_customer1">
+						<input type="hidden" name="func" value="auth">
+						<input type="hidden" name="url" value="{url}">
+						<table width="190" height=100 align="center">
+							<tr>
+								<td width="90" class="login"><div style="width:90px;overflow:hidden">{customer_login1}</div></td>
+								<td width="100"><input name="username" type="text" class="login" /></td>
+							</tr>
+							<tr>
+								<td width="90" class="login"><div style="width:90px;overflow:hidden">{customer_pass1}</div></td>
+								<td width="100"><input name="password" type="password" class="login" /></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td align="left"><input type="button" style="
+										text-align: center;
+										font-family: Verdana;
+										font-size: 9px;
+										color: #FFFFFF;
+										width: 59px;
+										height: 17px;
+										background-image: url('theme/{theme}/button.gif');
+										margin:0;
+										border:0;" value="{customer_button1}" onClick="frm_customer1.submit()"></td>
+							</tr>
+							<tr>
+								<td colspan=2><a 
+							  	style="	font-family: Verdana;
+							  			font-size: 11px;"
+							  	href="{url_changepass}">{customer_changepass}</a></td>
+							</tr>
+						</table>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td background="theme/{theme}/box_3.gif">
+						<div style="height:21px;width:100%"></div>
+					</td>
+      			</tr>
+      		</table>
+      	</td>
+      	<td align="center" valign="top">
+      		<table width="223" border="0" align="center" cellpadding="0" cellspacing="0">
+      			<tr>
+	      			<td height="76" background="theme/{theme}/box_1.gif" align="left" valign="top" class="title" style="background-repeat:no-repeat">
+		      			<div style="overflow:hidden;text-align:right;width:200px;padding-top:20px;">{customer_title2}</div>
+    	  			</td>
+      			</tr>
+      			<tr>
+      				<td background="theme/{theme}/box_2.gif" >
+						<form action="{frm_customer2}" method="post" name="frm_customer2" id="frm_customer2">
+						<input type="hidden" name="func" value="guest">
+						<input type="hidden" name="url" value="{url}">
+						<table width="190" height=100 align="center">
+							<tr>
+								<td width="90" class="login"><div style="width:90px;overflow:hidden">{customer_key}</div></td>
+								<td width="100"><input name="key" type="text" class="login" /></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td align="left"><input type="button" style="
+										text-align: center;
+										font-family: Verdana;
+										font-size: 9px;
+										color: #FFFFFF;
+										width: 59px;
+										height: 17px;
+										background-image: url('theme/{theme}/button.gif');
+										margin:0;
+										border:0;" value="{customer_button1}" onClick="frm_customer2.submit()"></td>
+							</tr>
+						</table>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td background="theme/{theme}/box_3.gif">
+						<div style="height:21px;width:100%"></div>
+					</td>
+      			</tr>
+      		</table>
+      	</td>
+      </tr>
+    </table>
+    </body>
+<!-- nao feche o tag <HTML> pois jah eh fechado pelo script php que processa essa pagina -->

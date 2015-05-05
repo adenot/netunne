@@ -1,0 +1,7 @@
+INFO("Aplicando Configurações...")
+SERVERERROR("INVALIDLICENSE")
+RESULT("
+Enabling packet forwarding...done.
+Reconfiguring network interfaces...done.
+")
+/EOF/

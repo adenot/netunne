@@ -1,0 +1,4 @@
+INFO("Updating date and time...")
+RESULT("Running ntpdate to synchronize clock.
+")
+/EOF/

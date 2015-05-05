@@ -1,0 +1,12 @@
+INFO("Aplicando Configurações...")
+RESULT("
+Stopping CBQ traffic shaping: shaper.
+Starting CBQ traffic shaping: shaper.
+Running task_timelimit
+
+
+Stopping DHCP server: dhcp.
+Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.
+
+")
+/EOF/

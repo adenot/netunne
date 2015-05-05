@@ -1,0 +1,9 @@
+http://www.console.com.br/center/npak/
+Product: 1
+Package: pacote1
+Version: 1.0
+Filename: pacote1.npak
+Description: Pacote para testes, escreve um arquivo /tmp/pacote1
+Description-Installed: descricao pos-instalado
+MD5sum: dc16c5db615f05ac987a076a17cf5870
+

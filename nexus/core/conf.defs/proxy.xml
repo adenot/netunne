@@ -1,0 +1,5 @@
+<proxy>
+	<memcache>32</memcache>
+	<cache>200</cache>
+	<object>10</object>
+</proxy>

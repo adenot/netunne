@@ -1,0 +1,12 @@
+INFO("Pingando www.globo.com...")
+PING www.globo.com (201.7.178.45): 56 data bytes
+64 bytes from 201.7.178.45: icmp_seq=0 ttl=46 time=21.5 ms
+64 bytes from 201.7.178.45: icmp_seq=1 ttl=46 time=19.0 ms
+64 bytes from 201.7.178.45: icmp_seq=2 ttl=46 time=19.5 ms
+64 bytes from 201.7.178.45: icmp_seq=3 ttl=46 time=18.9 ms
+
+--- www.globo.com ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 18.9/19.7/21.5 ms
+OK 
+/EOF/

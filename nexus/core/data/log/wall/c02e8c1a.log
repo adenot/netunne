@@ -1,0 +1,7 @@
+INFO("Solicitando Registro...")
+﻿
+INFO("2afdcc","Welcome")
+SERVERINFO("2afdcc","Connected to Console License Center (@Brazil)")
+OK("Registro Recebido com Sucesso")
+
+/EOF/

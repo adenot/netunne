@@ -1,0 +1,24 @@
+INFO("Limpando...")
+RESULT("/NEXUS/nexus/core/data/squid-cache-eth1-230 is not a block special device.
+Proceed anyway? (y,n) Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+58928 inodes, 235520 blocks
+11776 blocks (5.00%) reserved for the super user
+First data block=1
+29 block groups
+8192 blocks per group, 8192 fragments per group
+2032 inodes per group
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185
+
+Writing inode tables:  0/29 1/29 2/29 3/29 4/29 5/29 6/29 7/29 8/29 9/2910/2911/2912/2913/2914/2915/2916/2917/2918/2919/2920/2921/2922/2923/2924/2925/2926/2927/2928/29done                            
+Creating journal (4096 blocks): done
+Writing superblocks and filesystem accounting information: done
+
+This filesystem will be automatically checked every 36 mounts or
+180 days, whichever comes first.  Use tune2fs -c or -i to override.
+
+")
+/EOF/

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE contato SYSTEM "a.dtd">
+<contato id="contato">
+	<nome tipo="aluno">Fabiano</nome>
+	<telefone>abc</telefone>
+                      <endereco>Rua ABC</endereco>
+</contato>

@@ -1,0 +1,14 @@
+INFO("Solicitando Registro...")
+ALERT("Invalid URL Request, trying next server (#0)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#1)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#2)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#3)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#4)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#5)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#6)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#7)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#8)... ","NEXTSERVER")
+ALERT("Invalid URL Request, trying next server (#9)... ","NEXTSERVER")
+ERROR("Todos os servidores falharam! Por favor cheque sua conexão!","CONNERROR")
+
+/EOF/

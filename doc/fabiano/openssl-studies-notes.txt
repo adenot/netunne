@@ -1,0 +1,27 @@
+openssl req -new -x509 -key privkey.pem -out cacert.pem -days 1095
+Proxy certificates are defined in RFC 3820 http://www.ietf.org/rfc/rfc3820.txt
+X500-DN-0.28.tar.gz
+OpenCA-OpenSSL-0.9.91
+http://search.cpan.org/~oesi/OpenSSL-0.09/
+http://search.cpan.org/~ajung/Crypt-X509-0.2/lib/Crypt/X509.pm
+http://search.cpan.org/~gbarr/Convert-ASN1-0.19/lib/Convert/ASN1.pod#DESCRIPTION
+http://192.168.100.21/ssl.php
+http://search.cpan.org/~madwolf/OpenCA-OpenSSL-0.9.91/OpenSSL.pod
+http://tinyca.sm-zone.net/
+http://www.columbia.edu/~ariel/ssleay/x509_index.h
+http://search.cpan.org/~madwolf/
+http://search.cpan.org/~rjoop/X500-DN-0.28/DN.pod
+CSR (Certificate Signing Request)
+Certificate Revocation List (CRL
+Public Key Cryptography Standards (PKCS)
+S/MIME. S/MIME was originally an RSA Data Security standard based on their Public Key Cryptography Standards (PKCS)
+PEM. Privacy Enhanced Mail (PEM)
+
+sudo apt-get install php4-mcrypt
+
+http://www.dmst.aueb.gr/dds/secimp/crypto/indexw.htm
+http://www.ciphersbyritter.com/
+
+referencias acadêmicas:
+http://www.cic.unb.br/extensao/c003/ementaC1.htm
+http://www.cic.unb.br/extensao/c003/ementanova.htm

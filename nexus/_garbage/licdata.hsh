@@ -1,0 +1,12 @@
+%licdata = (
+  "license" => {
+    duration => "3"
+	md5 => "tfsd56faf7s5f7sf57sf5s76"
+  },
+  "permission" => {
+    duration => "2"
+	antivirus => "1"
+  },
+);
+print "licdata=$licdata{license}{duration}\n"; 
+print "licdata=$licdata{permission}{duration}\n"; 

@@ -1,0 +1,23 @@
+# USER MAC spike
+iptables -t filter -I forwarduser -m account --aname spike --ashort --aaddr 192.168.31.11
+			iptables -t mangle -A forwarduser \
+				-s 192.168.31.11 -m mac --mac-source aa:bb:cc:dd:ee:ff \
+				-m condition --condition spike \
+			 	-j spike
+			 	
+			iptables -t mangle -A forwarduser \
+				-d 192.168.31.11 \
+				-j spike
+
+			iptables -t filter -A forwarduser \
+				-s 192.168.31.11 -m mac --mac-source aa:bb:cc:dd:ee:ff \
+				-m condition --condition spike \
+			 	-j spike
+
+			iptables -t nat -I PREROUTING \
+				-m mac --mac-source aa:bb:cc:dd:ee:ff \
+				-s 192.168.31.11 \
+				-m condition --condition spike \
+				-j RETURN
+
+			echo 0 > /proc/net/ipt_condition/spike

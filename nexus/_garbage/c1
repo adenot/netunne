@@ -1,0 +1,156 @@
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 14 sound
+ 21 sg
+ 29 fb
+116 alsa
+119 vmnet
+128 ptm
+136 pts
+180 usb
+254 pcmcia
+
+Block devices:
+  1 ramdisk
+  2 fd
+  3 ide0
+  7 loop
+  8 sd
+  9 md
+ 11 sr
+ 22 ide1
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+253 device-mapper
+254 mdp
+00000000-0009fbff : System RAM
+0009fc00-0009ffff : reserved
+000a0000-000bffff : Video RAM area
+000c0000-000c7dff : Video ROM
+000f0000-000fffff : System ROM
+00100000-1dfeffff : System RAM
+  00100000-0038d1ea : Kernel code
+  0038d1eb-004ab5ff : Kernel data
+1dff0000-1dff2fff : ACPI Non-volatile Storage
+1dff3000-1dffffff : ACPI Tables
+e0000000-e3ffffff : 0000:00:00.0
+e4000000-e7ffffff : PCI Bus #01
+  e4000000-e7ffffff : 0000:01:00.0
+    e4000000-e41d4bff : vesafb
+e8000000-e9ffffff : PCI Bus #01
+  e8000000-e8ffffff : 0000:01:00.0
+ea000000-ea0000ff : 0000:00:10.3
+  ea000000-ea0000ff : ehci_hcd
+ea001000-ea0010ff : 0000:00:12.0
+  ea001000-ea0010ff : via-rhine
+fec00000-fec00fff : reserved
+fee00000-fee00fff : reserved
+ffff0000-ffffffff : reserved
+0000-001f : dma1
+0020-0021 : pic1
+0040-005f : timer
+0060-006f : keyboard
+0080-008f : dma page reg
+00a0-00a1 : pic2
+00c0-00df : dma2
+00f0-00ff : fpu
+0170-0177 : ide1
+01f0-01f7 : ide0
+02f8-02ff : serial
+0376-0376 : ide1
+0378-037a : parport0
+037b-037f : parport0
+03c0-03df : vesafb
+03f6-03f6 : ide0
+03f8-03ff : serial
+0408-040b : ACPI timer
+0410-0415 : ACPI CPU throttle
+0cf8-0cff : PCI conf1
+d000-d01f : 0000:00:10.0
+  d000-d01f : uhci_hcd
+d400-d41f : 0000:00:10.1
+  d400-d41f : uhci_hcd
+d800-d81f : 0000:00:10.2
+  d800-d81f : uhci_hcd
+dc00-dc0f : 0000:00:11.1
+  dc00-dc07 : ide0
+  dc08-dc0f : ide1
+e000-e0ff : 0000:00:11.5
+  e000-e0ff : VIA8233
+e800-e8ff : 0000:00:12.0
+  e800-e8ff : via-rhine
+PCI devices found:
+  Bus  0, device   0, function  0:
+    Host bridge: VIA Technologies, Inc. VT8378 [KM400] Chipset Host Bridge (rev 0).
+      Master Capable.  Latency=8.  
+      Prefetchable 32 bit memory at 0xe0000000 [0xe3ffffff].
+  Bus  0, device   1, function  0:
+    PCI bridge: VIA Technologies, Inc. VT8237 PCI Bridge (rev 0).
+      Master Capable.  No bursts.  Min Gnt=12.
+  Bus  0, device  16, function  0:
+    USB Controller: VIA Technologies, Inc. VT82xxxxx UHCI USB 1.1 Controller (rev 128).
+      IRQ 11.
+      Master Capable.  Latency=32.  
+      I/O at 0xd000 [0xd01f].
+  Bus  0, device  16, function  1:
+    USB Controller: VIA Technologies, Inc. VT82xxxxx UHCI USB 1.1 Controller (#2) (rev 128).
+      IRQ 11.
+      Master Capable.  Latency=32.  
+      I/O at 0xd400 [0xd41f].
+  Bus  0, device  16, function  2:
+    USB Controller: VIA Technologies, Inc. VT82xxxxx UHCI USB 1.1 Controller (#3) (rev 128).
+      IRQ 10.
+      Master Capable.  Latency=32.  
+      I/O at 0xd800 [0xd81f].
+  Bus  0, device  16, function  3:
+    USB Controller: VIA Technologies, Inc. USB 2.0 (rev 130).
+      IRQ 10.
+      Master Capable.  Latency=32.  
+      Non-prefetchable 32 bit memory at 0xea000000 [0xea0000ff].
+  Bus  0, device  17, function  0:
+    ISA bridge: VIA Technologies, Inc. VT8235 ISA Bridge (rev 0).
+  Bus  0, device  17, function  1:
+    IDE interface: VIA Technologies, Inc. VT82C586A/B/VT82C686/A/B/VT823x/A/C PIPC Bus Master IDE (rev 6).
+      IRQ 11.
+      Master Capable.  Latency=32.  
+      I/O at 0xdc00 [0xdc0f].
+  Bus  0, device  17, function  5:
+    Multimedia audio controller: VIA Technologies, Inc. VT8233/A/8235/8237 AC97 Audio Controller (rev 80).
+      IRQ 10.
+      I/O at 0xe000 [0xe0ff].
+  Bus  0, device  18, function  0:
+    Ethernet controller: VIA Technologies, Inc. VT6102 [Rhine-II] (rev 116).
+      IRQ 11.
+      Master Capable.  Latency=32.  Min Gnt=3.Max Lat=8.
+      I/O at 0xe800 [0xe8ff].
+      Non-prefetchable 32 bit memory at 0xea001000 [0xea0010ff].
+  Bus  1, device   0, function  0:
+    VGA compatible controller: VIA Technologies, Inc. VT8378 [S3 UniChrome] Integrated Video (rev 1).
+      IRQ 11.
+      Master Capable.  Latency=32.  Min Gnt=2.
+      Prefetchable 32 bit memory at 0xe4000000 [0xe7ffffff].
+      Non-prefetchable 32 bit memory at 0xe8000000 [0xe8ffffff].

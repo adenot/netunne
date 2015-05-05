@@ -1,0 +1,5 @@
+INFO("Requesting License...")
+﻿SERVERINFO("4de44d","Connected to Console License Center")
+SERVERERROR("4de44d","NULLUSER")
+
+/EOF/

@@ -1,0 +1,2470 @@
+# Portuguese translations for PACKAGE package.
+# Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# root <root@streamline>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Console Netunne Provider 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-06 14:04-0200\n"
+"PO-Revision-Date: 2008-02-06 14:08-0300\n"
+"Last-Translator: Allan Denot <adenot@console.com.br>\n"
+"Language-Team: Portuguese <console@console.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Language: pt_BR\n"
+"X-Poedit-Country: Brazil\n"
+"X-Poedit-Bookmarks: 49,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+
+#: core/nlib/cls_checklicense.php:221
+#: interface/nlib/cls_act.php:801
+msgid "Invalid Registry"
+msgstr "Registro Inválido"
+
+#: core/nlib/cls_license.php:101
+msgid "ID and Key cannot be null"
+msgstr "ID e Chave não podem ser nulos"
+
+#: core/nlib/cls_license.php:132
+msgid "Registry Received Succefully"
+msgstr "Registro Recebido com Sucesso"
+
+#: core/nlib/cls_license.php:224
+msgid "All servers failed! Please check your connection!"
+msgstr "Todos os servidores falharam! Por favor cheque sua conexão!"
+
+#: core/nlib/cls_npak.php:221
+#, php-format
+msgid "Downloading..."
+msgstr "Fazendo download..."
+
+#: core/nlib/cls_npak.php:229
+msgid "Cannot download file! Check your connection"
+msgstr "Não é possível fazer o download do arquivo! Cheque sua conexão"
+
+#: core/nlib/cls_npak.php:237
+#: interface/nlib/cls_act.php:598
+msgid "Installing..."
+msgstr "Instalando..."
+
+#: core/nlib/cls_npak.php:248
+#, php-format
+msgid "Not a valid Npak file!"
+msgstr "Não é um arquivo Npak válido!"
+
+#: core/nlib/cls_npak.php:255
+#, php-format
+msgid "%s Installed"
+msgstr "%s Instalado"
+
+#: core/nlib/core_common.php:374
+msgid "m/d/Y h:i:sa"
+msgstr "d/m/Y H:i:s"
+
+#: core/nlib/core_common.php:377
+msgid "Y-m-d-H\\hi"
+msgstr "Y-m-d-H\\hi"
+
+#: core/nlib/core_common.php:380
+#: interface/nlib/html_form_datetime.php:12
+msgid "January|February|March|April|May|June|July|August|September|October|November|December"
+msgstr "Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|Setembro|Outubro|Novembro|Dezembro"
+
+#: core/nlib/cls_conf.php:257
+msgid "Last operation undone"
+msgstr "Última operação desfeita"
+
+#: core/nlib/cls_conf.php:295
+msgid "Applying Configs..."
+msgstr "Aplicando Configurações..."
+
+#: core/nlib/cls_conf.php:302
+msgid "Discarding Changes..."
+msgstr "Descartando Alterações..."
+
+#: core/nlib/task_sysmonitor.php:33
+msgid "HD Error"
+msgstr "Erro no HD"
+
+#: core/nlib/task_sysmonitor.php:34
+msgid "Harddisk error. Backup and replace the disk."
+msgstr "Erro no HD. Faça Backup e troque o disco."
+
+#: core/nlib/task_sysmonitor.php:38
+msgid "{1}: Cable disconnected"
+msgstr "{1}: Cabo de Rede desconectado"
+
+#: core/nlib/task_sysmonitor.php:39
+msgid "Network cable disconnected on {1}"
+msgstr "Cabo de rede desconectado em {1}"
+
+#: core/nlib/task_sysmonitor.php:42
+msgid "{1}: Cable connected"
+msgstr "{1}: Cabo de rede conectado"
+
+#: core/nlib/task_sysmonitor.php:43
+msgid "Network cable connected on {1}"
+msgstr "Cabo de rede conectado em {1}"
+
+#: core/nlib/task_sysmonitor.php:46
+msgid "{1}: Internet check failed"
+msgstr "{1}: Verificação da internet falhou"
+
+#: core/nlib/task_sysmonitor.php:47
+msgid "It seems like internet link on {1} is down"
+msgstr "Parece que a internet conectada em {1} está fora do ar"
+
+#: core/nlib/task_sysmonitor.php:51
+#: interface/nlib/cls_userlog.php:49
+msgid "Invalid License"
+msgstr "Licença Inválida"
+
+#: core/nlib/task_sysmonitor.php:52
+msgid "Your license is expired/invalid."
+msgstr "Sua licença está expirada ou inválida."
+
+#: core/nlib/task_sysmonitor.php:58
+msgid "Max simultaneous connections creditusers reached"
+msgstr "O número máximo de conexões simultâneas de usuários de crédito alcançada"
+
+#: core/nlib/task_sysmonitor.php:59
+msgid "Check your license."
+msgstr "Verifique sua licença."
+
+#: core/nlib/task_sysmonitor.php:63
+msgid "Data partition {1} full"
+msgstr "Partição de dados {1} cheia."
+
+#: core/nlib/task_sysmonitor.php:64
+msgid "Your data partition is {1} full, download and clean Data in Configuration > Backup & Data"
+msgstr "A partição de dados {1} está cheia, salve-a e limpe-a  no menu Configurações de Dados > Backup & Dados"
+
+#: core/nlib/task_sysmonitor.php:67
+msgid "System partition full"
+msgstr "A partição do sistema está cheia."
+
+#: core/nlib/task_sysmonitor.php:68
+msgid "Your system partition is full, restart server and if the problem persists, contact technical support"
+msgstr "A partição do sistema está cheia, reinicie o servidor. Caso o problema persista, contate o suporte técnico."
+
+#: core/nlib/task_sysmonitor.php:72
+msgid "Max user limit reached"
+msgstr "Número máximo de usuários alcançado"
+
+#: core/nlib/task_sysmonitor.php:73
+msgid "You have more registered clients than your license allows. Remove some clients or upgrade your license."
+msgstr "Você possui mais usuários registrados que sua licença permite. Remova alguns usuários ou obtenha uma licença que permita."
+
+#: core/nlib/task_sysmonitor.php:76
+msgid "Memory Error"
+msgstr "Erro de Memória"
+
+#: core/nlib/task_sysmonitor.php:77
+msgid "Memory error. Check your memory (with memtest) or replace."
+msgstr "Erro de Memória. Cheque a memória com um memtest ou troque-a"
+
+#: core/nlib/task_sysmonitor.php:180
+msgid "Details: "
+msgstr "Detalhes:"
+
+#: interface/nlib/cls_frame.php:35
+msgid "Save"
+msgstr "Salvar"
+
+#: interface/nlib/cls_form.php:193
+msgid "Click to generate a different key"
+msgstr "Click para gerar outra chave"
+
+#: interface/nlib/html_page_open.php:11
+msgid "Administration"
+msgstr "Administração"
+
+#: interface/nlib/html_page_open.php:14
+#: interface/www/network/index.php:20
+msgid "Network Setup"
+msgstr "Configuração de Rede"
+
+#: interface/nlib/html_page_open.php:17
+msgid "Proxy Definitions"
+msgstr "Definições do Proxy"
+
+#: interface/nlib/html_page_open.php:20
+msgid "DDNS"
+msgstr "DDNS"
+
+#: interface/nlib/html_page_open.php:23
+msgid "Time & Date"
+msgstr "Data & Hora"
+
+#: interface/nlib/html_page_open.php:26
+#: interface/www/setup/license.php:17
+msgid "Server Registry"
+msgstr "Registro do Servidor"
+
+#: interface/nlib/html_page_open.php:29
+msgid "Update Info"
+msgstr "Info. de Atualização"
+
+#: interface/nlib/html_page_open.php:32
+msgid "Backup & Data"
+msgstr "Backup & Dados"
+
+#: interface/nlib/html_page_open.php:35
+#: interface/www/setup/server.php:14
+msgid "Server Info"
+msgstr "Info. do Servidor"
+
+#: interface/nlib/html_page_open.php:38
+#: interface/www/network/conncheck.php:14
+#: interface/www/network/conncheck.php:59
+msgid "Connection Check"
+msgstr "Verificar Conexão"
+
+#: interface/nlib/html_page_open.php:42
+#: interface/www/custom/login.php:12
+#: interface/userauth/form.php:46
+msgid "Customer Login"
+msgstr "Login do Cliente"
+
+#: interface/nlib/html_page_open.php:48
+#: interface/www/custom/alerts.php:12
+msgid "Customer Alerts"
+msgstr "Alertas do Cliente"
+
+#: interface/nlib/html_page_open.php:51
+#: interface/www/custom/billing.php:12
+msgid "Limits"
+msgstr "Limites"
+
+#: interface/nlib/html_page_open.php:55
+msgid "Customers"
+msgstr "Clientes"
+
+#: interface/nlib/html_page_open.php:58
+#: interface/www/control/guest.php:21
+#: interface/www/control/guestedit.php:20
+msgid "Credit"
+msgstr "Créditos"
+
+#: interface/nlib/html_page_open.php:61
+#: interface/www/control/plan.php:15
+#: interface/www/control/plan.php:33
+msgid "Plans"
+msgstr "Planos"
+
+#: interface/nlib/html_page_open.php:64
+#: interface/www/control/publish.php:13
+#: interface/www/control/publishedit.php:19
+msgid "Publish Server"
+msgstr "Publicação de Servidores"
+
+#: interface/nlib/html_page_open.php:196
+msgid "Review last changes and apply"
+msgstr "Rever as últimas alterações e aplicar"
+
+#: interface/nlib/html_page_open.php:210
+msgid "Configuration"
+msgstr "Configuração"
+
+#: interface/nlib/html_page_open.php:225
+msgid "Customization"
+msgstr "Personalização"
+
+#: interface/nlib/html_page_open.php:240
+msgid "Control"
+msgstr "Controle"
+
+#: interface/nlib/html_page_open.php:307
+#, php-format
+msgid "Error! %s"
+msgstr "Erro! %s"
+
+#: interface/nlib/html_page_open.php:314
+#: interface/nlib/html_page_open.php:329
+#: interface/nlib/cls_act.php:27
+msgid "Alterations saved successfully"
+msgstr "Alterações salvas com sucesso"
+
+#: interface/nlib/html_page_open.php:321
+msgid "Alterations undone!"
+msgstr "Alterações desfeitas!"
+
+#: interface/nlib/html_page_open.php:323
+msgid "Redo"
+msgstr "Refazer"
+
+#: interface/nlib/html_page_open.php:330
+msgid "Click on Undo to cancel last alteration"
+msgstr "Clique para desfazer as últimas alterações"
+
+#: interface/nlib/html_page_open.php:332
+#: interface/nlib/__cls_framereturn.php:37
+msgid "Undo"
+msgstr "Desfazer"
+
+#: interface/nlib/html_page_open.php:338
+msgid "This action cannot be perfomed due to license restrictions"
+msgstr "Essa ação não pode ser executado devido a restrições da sua licença"
+
+#: interface/nlib/html_page_open.php:339
+msgid "Your license disables you to make this action.<BR>Click on View Details to find informations about your license."
+msgstr "Sua licença não permite essa ação.<BR>Clique para em Ver Detalhes  para maiores informações sobre sua licença."
+
+#: interface/nlib/html_page_open.php:341
+#: interface/nlib/html_framelog.php:121
+msgid "View Details"
+msgstr "Ver Detalhes"
+
+#: interface/nlib/html_table.php:67
+msgid "Filter Result"
+msgstr "Filtrar Resultado"
+
+#: interface/nlib/html_table.php:70
+#: interface/nlib/html_table.php:136
+msgid "Show all itens"
+msgstr "Exibir todos os itens"
+
+#: interface/nlib/html_table.php:119
+msgid "Execute action for selected itens"
+msgstr "Executar ação aos itens selecionados"
+
+#: interface/nlib/html_table.php:142
+msgid "Restore Paging"
+msgstr "Restaurar Paginação"
+
+#: interface/nlib/html_table.php:152
+msgid "First"
+msgstr "Primeiro"
+
+#: interface/nlib/html_table.php:157
+msgid "Previous"
+msgstr "Anterior"
+
+#: interface/nlib/html_table.php:175
+msgid "Next"
+msgstr "Próximo"
+
+#: interface/nlib/html_table.php:180
+msgid "Last"
+msgstr "Último"
+
+#: interface/nlib/cls_framebutton.php:42
+msgid "Start"
+msgstr "Iniciar"
+
+#: interface/nlib/cls_act.php:30
+#, php-format
+msgid "Error #%s"
+msgstr "Erro #%s"
+
+#: interface/nlib/cls_act.php:85
+msgid "Checking Registry..."
+msgstr "Checando Registro..."
+
+#: interface/nlib/cls_act.php:93
+msgid "Requesting Registry..."
+msgstr "Solicitando Registro..."
+
+#: interface/nlib/cls_act.php:131
+msgid "Install Update"
+msgstr "Instalando Atualizações"
+
+#: interface/nlib/cls_act.php:150
+msgid "Error: Invalid first DHCP IP address"
+msgstr "Erro: IP para inicio do DHCP inválido"
+
+#: interface/nlib/cls_act.php:152
+msgid "Error: Invalid static IP address"
+msgstr "Erro: Inválido IP estático"
+
+#: interface/nlib/cls_act.php:154
+msgid "Error: Only one internal interface allowed"
+msgstr "Erro: Apenas uma interface interna é permitida"
+
+#: interface/nlib/cls_act.php:200
+#: interface/nlib/cls_act.php:238
+msgid "Error: Login already exists"
+msgstr "Erro: O Login já existe"
+
+#: interface/nlib/cls_act.php:202
+msgid "Error: Login null"
+msgstr "Erro: Login em branco"
+
+#: interface/nlib/cls_act.php:204
+msgid "Error: This plan is PPPoE, please enter a IP"
+msgstr "Erro: Esse plano é PPPoE, por favor, entre o IP"
+
+#: interface/nlib/cls_act.php:206
+msgid "Error: Please Select a Plan"
+msgstr "Erro: Por favor, Selecione o Plano"
+
+#: interface/nlib/cls_act.php:208
+msgid "Error: Invalid Ip"
+msgstr "Erro: IP inválido"
+
+#: interface/nlib/cls_act.php:210
+msgid "Error: Invalid MAC"
+msgstr "Erro: MAC inválido"
+
+#: interface/nlib/cls_act.php:212
+msgid "Error: Invalid Login. Use only letters or numbers"
+msgstr "Erro: Login inválido. Use apenas letras ou números"
+
+#: interface/nlib/cls_act.php:240
+msgid "Error: Empty value in Expire or Total Minutes"
+msgstr "Erro: Expiração ou Minutos Total estão vazios"
+
+#: interface/nlib/cls_act.php:274
+#, php-format
+msgid "Error: %s port already exists"
+msgstr "Erro: porta já existe em %s"
+
+#: interface/nlib/cls_act.php:276
+msgid "Error: Invalid destination customer or IP"
+msgstr "Erro: IP ou destino inválido"
+
+#: interface/nlib/cls_act.php:278
+msgid "Error: Invalid Port"
+msgstr "Erro: Porta Inválida"
+
+#: interface/nlib/cls_act.php:280
+msgid "Error: Reserved Port"
+msgstr "Erro: Porta reservada"
+
+#: interface/nlib/cls_act.php:305
+msgid "Updating date and time..."
+msgstr "Atualizando data e hora..."
+
+#: interface/nlib/cls_act.php:316
+msgid "Error: All fields must be filled"
+msgstr "Erro: Todos os campos devem ser preenchidos"
+
+#: interface/nlib/cls_act.php:348
+#: interface/www/entrance/index.php:94
+msgid "Invalid Password"
+msgstr "Senha Inválida"
+
+#: interface/nlib/cls_act.php:355
+#: interface/nlib/cls_act.php:363
+msgid "Empty Host"
+msgstr "Host Vazio"
+
+#: interface/nlib/cls_act.php:365
+msgid "Tracing Route to Host"
+msgstr "Traçar rota do servidor"
+
+#: interface/nlib/cls_act.php:384
+msgid "Error: Please upload only GIF or JPEG images"
+msgstr "Erro: Por favor, a imagem deve ser no formato GIF ou JPG"
+
+#: interface/nlib/cls_act.php:386
+msgid "Error: Invalid URL"
+msgstr "Erro: URL inválida"
+
+#: interface/nlib/cls_act.php:399
+msgid "Error: Language not found in system defaults"
+msgstr "Erro: Idioma não encontrado"
+
+#: interface/nlib/cls_act.php:421
+msgid "Error: Invalid Plan name"
+msgstr "Erro: Nome do plano inválido"
+
+#: interface/nlib/cls_act.php:424
+msgid "Error: Invalid Speed. Only numbers"
+msgstr "Erro: Velocidade Inválida. Use apenas números"
+
+#: interface/nlib/cls_act.php:427
+msgid "Error: Invalid Name. Only letters or numbers"
+msgstr "Erro: Nome inválido. Use apenas letras ou números"
+
+#: interface/nlib/cls_act.php:464
+msgid "Error: Invalid Destination Port"
+msgstr "Erro: Porta de Destino Inválida"
+
+#: interface/nlib/cls_act.php:466
+msgid "Error: Invalid Destination"
+msgstr "Erro: Destino Inválido"
+
+#: interface/nlib/cls_act.php:468
+msgid "Error: Select at least one Weekday"
+msgstr "Erro: Selecione pelo menos um dia na semana"
+
+#: interface/nlib/cls_act.php:470
+msgid "Error: Invalid Speed Rate"
+msgstr "Erro: Velocidade Inválida"
+
+#: interface/nlib/cls_act.php:489
+msgid "Backup restored"
+msgstr "Backup restaurado"
+
+#: interface/nlib/cls_act.php:539
+msgid "Invalid backup file to restore"
+msgstr "Arquivo de backup inválido"
+
+#: interface/nlib/cls_act.php:541
+msgid "Manual backup restored"
+msgstr "Backup manual restaurado"
+
+#: interface/nlib/cls_act.php:606
+msgid "Cleaning..."
+msgstr "Limpando..."
+
+#: interface/nlib/cls_act.php:616
+msgid "Error: Your cache is too big"
+msgstr "Erro: Seu cache está grande demais"
+
+#: interface/nlib/cls_act.php:678
+msgid "Disconnecting User..."
+msgstr "Desconectando Usuário..."
+
+#: interface/nlib/cls_act.php:691
+msgid "Enabling Interface..."
+msgstr "Habilitando interface..."
+
+#: interface/nlib/cls_act.php:735
+#, php-format
+msgid "Pinging %s..."
+msgstr "Pingando %s..."
+
+#: interface/nlib/cls_act.php:744
+#, php-format
+msgid "Tracing route to %s..."
+msgstr "Traçando rota para %s..."
+
+#: interface/nlib/cls_act.php:753
+msgid "Initializing Install..."
+msgstr "Iniciando Instalação..."
+
+#: interface/nlib/cls_act.php:784
+msgid "List Received Sucefully"
+msgstr "Lista Recebida com Sucesso"
+
+#: interface/nlib/cls_act.php:786
+msgid "Cannot receive list"
+msgstr "Não foi possível receber a lista"
+
+#: interface/nlib/cls_act.php:799
+msgid "Changes Applied"
+msgstr "Modificações Aplicadas"
+
+#: interface/nlib/cls_act.php:821
+msgid "Proxy Installed"
+msgstr "Proxy Instalado"
+
+#: interface/nlib/cls_act.php:823
+msgid "OK"
+msgstr "OK"
+
+#: interface/nlib/cls_act.php:825
+msgid "Error"
+msgstr "Erro"
+
+#: interface/nlib/cls_act.php:835
+msgid "Action Performed. <BR>Click View Details."
+msgstr "Ação Realizada. <BR>Clique para ver os detalhes."
+
+#: interface/nlib/html_framelog.php:127
+#: interface/nlib/cls_userlog.php:69
+msgid "Ok"
+msgstr "Ok"
+
+#: interface/nlib/cls_act_info.php:101
+msgid "Date/Time changed"
+msgstr "Data e Hora modificadas"
+
+#: interface/nlib/cls_userlog.php:46
+msgid "Invalid Key"
+msgstr "Chave Inválida"
+
+#: interface/nlib/cls_userlog.php:52
+msgid "Null User"
+msgstr "Usuário Vazio"
+
+#: interface/nlib/cls_userlog.php:77
+msgid "Failed"
+msgstr "Falhou"
+
+#: interface/nlib/cls_act_network.php:31
+msgid "Network DNS changed"
+msgstr "DNS da Rede Alterado"
+
+#: interface/nlib/cls_act_network.php:52
+#, php-format
+msgid "Primary Interface changed to %s"
+msgstr "Interface primária alterada para %s"
+
+#: interface/nlib/cls_act_network.php:78
+msgid "DDNS config changed"
+msgstr "DDNS alterado"
+
+#: interface/nlib/cls_act_network.php:193
+msgid "Network card config changed"
+msgstr "Configurações da placa de rede alteradas."
+
+#: interface/nlib/cls_act_network.php:241
+msgid "Proxy Config changed"
+msgstr "Configuração do Proxy alterada"
+
+#: interface/nlib/cls_act_user.php:33
+msgid "Credited Customer settings changed"
+msgstr "Configurações dos créditos alteradas"
+
+#: interface/nlib/cls_act_user.php:59
+#: interface/www/control/useredit.php:89
+#: interface/www/setup/admin.php:27
+msgid "Login"
+msgstr "Login"
+
+#: interface/nlib/cls_act_user.php:60
+#: interface/www/control/useredit.php:111
+msgid "Details"
+msgstr "Detalhes"
+
+#: interface/nlib/cls_act_user.php:61
+#: interface/www/control/plan.php:25
+#: interface/www/control/fnc_plan.php:70
+#: interface/www/control/planedit.php:40
+msgid "Plan Name"
+msgstr "Nome do Plano"
+
+#: interface/nlib/cls_act_user.php:62
+#: install/installb.php:99
+msgid "IP"
+msgstr "IP"
+
+#: interface/nlib/cls_act_user.php:63
+msgid "MAC"
+msgstr "MAC"
+
+#: interface/nlib/cls_act_user.php:64
+#: interface/www/control/useredit.php:119
+#: interface/www/setup/ddns.php:51
+#: interface/www/entrance/index.php:57
+#: interface/userauth/form.php:52
+#: install/installb.php:65
+msgid "Password"
+msgstr "Senha"
+
+#: interface/nlib/cls_act_user.php:65
+#: interface/www/network/index.php:52
+#: interface/www/network/cardedit.php:69
+#: interface/www/control/useredit.php:97
+msgid "Status"
+msgstr "Status"
+
+#: interface/nlib/cls_act_user.php:235
+#, php-format
+msgid "Customer %s added"
+msgstr "Cliente %s adicionado"
+
+#: interface/nlib/cls_act_user.php:237
+#, php-format
+msgid "Customer %s changed"
+msgstr "Cliente %s alterado"
+
+#: interface/nlib/cls_act_user.php:364
+msgid "Credit added"
+msgstr "Crédito adicionado"
+
+#: interface/nlib/cls_act_user.php:439
+#, php-format
+msgid "Publish Server port %s added"
+msgstr "Servidor Publicado na Porta %s"
+
+#: interface/nlib/cls_act_user.php:441
+#, php-format
+msgid "Publish Server port %s changed"
+msgstr "Servidor Publicado alterado na Porta %s"
+
+#: interface/nlib/cls_act_user.php:472
+#, php-format
+msgid "Published Server(s) port(s) %s removed"
+msgstr "Os Servidor(es) Publicado(s) na(s) Porta(s) %s foram removidos"
+
+#: interface/nlib/cls_frameback.php:31
+#: interface/userauth/form.php:229
+#: install/installa.php:92
+#: install/installb.php:130
+msgid "Back"
+msgstr "Voltar"
+
+#: interface/nlib/html_apply.php:29
+msgid "Apply Changes"
+msgstr "Aplicar Alterações"
+
+#: interface/nlib/html_apply.php:45
+msgid "Last changes:"
+msgstr "Últimas alterações:"
+
+#: interface/nlib/html_apply.php:47
+msgid "Apply this changes now?"
+msgstr "Aplicar essas modificações agora?"
+
+#: interface/nlib/html_apply.php:68
+msgid "Apply!"
+msgstr "Aplicar!"
+
+#: interface/nlib/html_apply.php:69
+msgid "Applying..."
+msgstr "Aplicando..."
+
+#: interface/nlib/html_apply.php:72
+msgid "Discard"
+msgstr "Descartar"
+
+#: interface/nlib/html_apply.php:73
+msgid "Discarding..."
+msgstr "Descartando..."
+
+#: interface/nlib/html_form_datefromnow.php:13
+msgid "minute(s)"
+msgstr "minuto(s)"
+
+#: interface/nlib/html_form_datefromnow.php:14
+msgid "hour(s)"
+msgstr "hora(s)"
+
+#: interface/nlib/html_form_datefromnow.php:15
+msgid "day(s)"
+msgstr "dia(s)"
+
+#: interface/nlib/html_form_datefromnow.php:16
+msgid "month(s)"
+msgstr "mês(es)"
+
+#: interface/nlib/html_form_datefromnow.php:17
+msgid "week(s)"
+msgstr "semana(s)"
+
+#: interface/nlib/html_form_datefromnow.php:18
+msgid "year(s)"
+msgstr "ano(s)"
+
+#: interface/nlib/html_form_datefromnow.php:42
+msgid "from now"
+msgstr "a partir de agora"
+
+#: interface/nlib/cls_act_plan.php:143
+msgid "Plan Edited"
+msgstr "Plano Alterado"
+
+#: interface/nlib/cls_act_plan.php:145
+msgid "Plan Added"
+msgstr "Plano Inserido"
+
+#: interface/nlib/cls_act_plan.php:274
+msgid "Plan Rule Changed"
+msgstr "Regra do Plano Alterada"
+
+#: interface/nlib/cls_act_plan.php:276
+msgid "Plan Rule Added"
+msgstr "Regra do Plano Adicionada"
+
+#: interface/nlib/cls_act_plan.php:330
+#, php-format
+msgid "Rules from plan %s removed"
+msgstr "Regras do plano %s removidas"
+
+#: interface/nlib/cls_act_plan.php:398
+#, php-format
+msgid "Plan(s): %s removed"
+msgstr "Plano(s) %s removidos"
+
+#: interface/nlib/cls_framelist.php:56
+msgid "no data"
+msgstr "sem dados"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Mon"
+msgstr "Seg"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Tue"
+msgstr "Ter"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Wed"
+msgstr "Qua"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Thu"
+msgstr "Qui"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Fri"
+msgstr "Sex"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Sat"
+msgstr "Sab"
+
+#: interface/nlib/html_form_week.php:13
+msgid "Sun"
+msgstr "Dom"
+
+#: interface/nlib/html_frameclock.php:31
+msgid "loading..."
+msgstr "carregando..."
+
+#: interface/www/_engine/act.php:45
+msgid "Saving config..."
+msgstr "Salvando configurações..."
+
+#: interface/www/_engine/jx_printlog.php:29
+msgid "This action has finish, click here to return."
+msgstr "Ação concluída, clique aqui para retornar."
+
+#: interface/www/_engine/jx_apply.php:15
+msgid "No changes made since last apply"
+msgstr "Nenhuma modificação realizada desde o último Aplicar."
+
+#: interface/www/network/index.php:34
+msgid "DNS"
+msgstr "DNS"
+
+#: interface/www/network/index.php:38
+msgid "DNS Server"
+msgstr "Servidor de DNS"
+
+#: interface/www/network/index.php:39
+msgid "DNS server IP address"
+msgstr "IP do Servidor de DNS "
+
+#: interface/www/network/index.php:49
+msgid "Network Cards"
+msgstr "Placas de Rede"
+
+#: interface/www/network/index.php:52
+msgid "Interface"
+msgstr "Interface"
+
+#: interface/www/network/index.php:52
+#: interface/www/network/cardedit.php:100
+#: interface/www/control/useredit.php:142
+msgid "IP Address"
+msgstr "Endereço de IP"
+
+#: interface/www/network/index.php:52
+msgid "Hardware"
+msgstr "Hardware"
+
+#: interface/www/network/index.php:60
+#: interface/www/control/user.php:56
+msgid "View Graphs"
+msgstr "Ver Gráficos"
+
+#: interface/www/network/index.php:61
+#: interface/www/control/user.php:57
+#: interface/www/control/guest.php:136
+#: interface/www/control/publish.php:57
+#: interface/www/control/plan.php:43
+#: interface/www/control/planedit.php:175
+#: interface/www/control/planedit.php:196
+msgid "Edit"
+msgstr "Editar"
+
+#: interface/www/network/index.php:70
+msgid "Primary Interface"
+msgstr "Interface Primária"
+
+#: interface/www/network/index.php:74
+#: interface/www/network/cardedit.php:116
+msgid "Default Gateway"
+msgstr "Gateway Padrão"
+
+#: interface/www/network/index.php:75
+msgid "Define the main gateway for the system"
+msgstr "Defina o gateway principal para o sistema"
+
+#: interface/www/network/fnc_network.php:84
+#: interface/www/network/cardedit.php:83
+msgid "Internal"
+msgstr "Interno"
+
+#: interface/www/network/fnc_network.php:87
+#: interface/www/network/cardedit.php:82
+msgid "External"
+msgstr "Externo"
+
+#: interface/www/network/fnc_network.php:100
+msgid "Down"
+msgstr "Desligada"
+
+#: interface/www/network/fnc_network.php:100
+msgid "Up"
+msgstr "Ativa"
+
+#: interface/www/network/fnc_network.php:173
+msgid "Unconfigured"
+msgstr "Desconfigurada"
+
+#: interface/www/network/conncheck.php:19
+msgid "Ping Host"
+msgstr "Pingar o Host"
+
+#: interface/www/network/conncheck.php:23
+#: interface/www/network/conncheck.php:34
+msgid "Host or IP"
+msgstr "Host ou IP"
+
+#: interface/www/network/conncheck.php:24
+msgid "Ping IP address or hostname"
+msgstr "Pingar Endereço de IP ou Nome de Servidor"
+
+#: interface/www/network/conncheck.php:30
+msgid "Trace Route to Host"
+msgstr "Traçar rota do servidor"
+
+#: interface/www/network/conncheck.php:35
+msgid "Trace route to IP address or hostname"
+msgstr "Traçar rota do Endereço de IP ou do servidor"
+
+#: interface/www/network/conncheck.php:65
+msgid "Disable link if check fails?"
+msgstr "Desabilitar link se checagem falhar?"
+
+#: interface/www/network/conncheck.php:66
+msgid "Should I disable the link if detected lost of internet connection?"
+msgstr "Devo desabilitar o link se for detectada <BR>queda da conexão de internet"
+
+#: interface/www/network/conncheck.php:68
+#: interface/www/network/cardedit.php:156
+#: interface/www/network/cardedit.php:173
+#: interface/www/control/planedit.php:108
+msgid "Yes"
+msgstr "Sim"
+
+#: interface/www/network/conncheck.php:69
+#: interface/www/network/cardedit.php:157
+#: interface/www/network/cardedit.php:174
+#: interface/www/control/planedit.php:109
+msgid "No"
+msgstr "Não"
+
+#: interface/www/network/conncheck.php:84
+msgid "Connection Problems"
+msgstr "Problemas de Conexão"
+
+#: interface/www/network/conncheck.php:89
+msgid "No connection errors"
+msgstr "Nenhum erro de conexão"
+
+#: interface/www/network/cardedit.php:20
+#: interface/www/network/cardedit.php:54
+msgid "Network Card Edit"
+msgstr "Editar Placa de Rede"
+
+#: interface/www/network/cardedit.php:52
+msgid "New Network Card"
+msgstr "Nova Placa de Rede"
+
+#: interface/www/network/cardedit.php:61
+msgid "Device"
+msgstr "Dispositivo"
+
+#: interface/www/network/cardedit.php:62
+msgid "Linux Ethernet Device Id"
+msgstr "Identificador da Placa no Linux"
+
+#: interface/www/network/cardedit.php:70
+msgid "Disable or Enable this network card"
+msgstr "Desativar ou Ativar essa placa de rede"
+
+#: interface/www/network/cardedit.php:72
+#: interface/www/control/useredit.php:100
+msgid "Enabled"
+msgstr "Ativado"
+
+#: interface/www/network/cardedit.php:73
+#: interface/www/control/useredit.php:101
+msgid "Disabled"
+msgstr "Desativado"
+
+#: interface/www/network/cardedit.php:79
+msgid "Type"
+msgstr "Tipo"
+
+#: interface/www/network/cardedit.php:80
+msgid ""
+"Internal: Connected to users\n"
+"External: Connected to Internet"
+msgstr ""
+"Interna: Conectada com clientes\n"
+"Externa: Conectada com a Internet"
+
+#: interface/www/network/cardedit.php:90
+msgid "IP Assignment"
+msgstr "IP Assignado"
+
+#: interface/www/network/cardedit.php:93
+msgid "Static"
+msgstr "Estático"
+
+#: interface/www/network/cardedit.php:94
+msgid "Dynamic (DHCP)"
+msgstr "Dinâmico (DHCP)"
+
+#: interface/www/network/cardedit.php:101
+msgid "ex: 192.168.100.1"
+msgstr "ex: 192.168.100.1"
+
+#: interface/www/network/cardedit.php:107
+#: install/installb.php:106
+msgid "Netmask"
+msgstr "Máscara"
+
+#: interface/www/network/cardedit.php:108
+#: interface/www/control/acledit.php:105
+msgid "ex: 255.255.255.0"
+msgstr "ex: 255.255.255.0"
+
+#: interface/www/network/cardedit.php:117
+msgid "IP address of the router"
+msgstr "Endereço de IP do roteador"
+
+#: interface/www/network/cardedit.php:124
+msgid "Primary DNS"
+msgstr "DNS Primário"
+
+#: interface/www/network/cardedit.php:125
+msgid "DNS server for this link"
+msgstr "Servidor DNS para esse Link"
+
+#: interface/www/network/cardedit.php:131
+msgid "Download Speed"
+msgstr "Velocidade de Download"
+
+#: interface/www/network/cardedit.php:132
+msgid "Select the nearest speed of this link"
+msgstr "Selecione a velocidade que mais próxima do seu link"
+
+#: interface/www/network/cardedit.php:153
+msgid "Activate DHCP"
+msgstr "Ativar DHCP"
+
+#: interface/www/network/cardedit.php:154
+msgid "Serve DHCP to this network?"
+msgstr "Servir DHCP nessa rede?"
+
+#: interface/www/network/cardedit.php:162
+msgid "DHCP Start Address"
+msgstr "Primeiro endereço do DHCP"
+
+#: interface/www/network/cardedit.php:163
+msgid "First IP given in DHCP Server"
+msgstr "Primeiro IP fornecido no Servidor de DHCP"
+
+#: interface/www/network/cardedit.php:170
+msgid "Allow remote Administration"
+msgstr "Permitir Administração Remota"
+
+#: interface/www/network/cardedit.php:171
+msgid "Allow SSH and HTTPS access in this card?"
+msgstr "Permitir acesso SSH ou HTTPS nessa placa?"
+
+#: interface/www/control/user.php:19
+msgid "User Management"
+msgstr "Gerenciamento de Cliente"
+
+#: interface/www/control/user.php:31
+msgid "Create New User"
+msgstr "Criar Novo Cliente"
+
+#: interface/www/control/user.php:32
+msgid "Go to new user form"
+msgstr "Ir para formulário de novo cliente"
+
+#: interface/www/control/user.php:35
+#: interface/www/control/guest.php:79
+#: interface/www/control/publish.php:39
+msgid "Create"
+msgstr "Criar"
+
+#: interface/www/control/user.php:42
+msgid "User List"
+msgstr "Lista de Clientes"
+
+#: interface/www/control/user.php:58
+#: interface/www/control/guest.php:137
+#: interface/www/control/publish.php:58
+#: interface/www/control/plan.php:44
+#: interface/www/control/planedit.php:176
+#: interface/www/control/planedit.php:197
+msgid "Remove"
+msgstr "Remover"
+
+#: interface/www/control/useredit.php:33
+msgid "Customer"
+msgstr "Cliente"
+
+#: interface/www/control/useredit.php:47
+#, php-format
+msgid "Online now since %s on link %s"
+msgstr "Online desde %s no link %s"
+
+#: interface/www/control/useredit.php:48
+msgid "Click Disconnect to force user to disconnect and prevent his future login"
+msgstr "Clique em Desconectar para desconectar o usuário nesse momento e evitar que ele logue novamente"
+
+#: interface/www/control/useredit.php:49
+msgid "Disconnecting User"
+msgstr "Desconectando Usuário"
+
+#: interface/www/control/useredit.php:50
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: interface/www/control/useredit.php:54
+msgid ""
+"Enter details like telefone number \n"
+"or contract number"
+msgstr ""
+"Entre detalhes, como telefone\n"
+"ou nome do contato"
+
+#: interface/www/control/useredit.php:55
+msgid "Username that allow user to login"
+msgstr "Nome para permitir o login do cliente"
+
+#: interface/www/control/useredit.php:56
+msgid "Enter Password"
+msgstr "Entre sua Senha"
+
+#: interface/www/control/useredit.php:57
+msgid "Select Plan that affects this user"
+msgstr "Selecione o Plano desse Cliente"
+
+#: interface/www/control/useredit.php:64
+msgid "Edit User"
+msgstr "Editar Cliente"
+
+#: interface/www/control/useredit.php:66
+msgid "New User"
+msgstr "Novo Cliente"
+
+#: interface/www/control/useredit.php:98
+msgid "Disable or Enable this user"
+msgstr "Habilitar e Desabilitar Cliente"
+
+#: interface/www/control/useredit.php:103
+#: interface/www/custom/alerts.php:46
+msgid "Disabled: custom 1"
+msgstr "Desabilitado: Alerta 1"
+
+#: interface/www/control/useredit.php:104
+#: interface/www/custom/alerts.php:53
+msgid "Disabled: custom 2"
+msgstr "Desabilitado: Alerta 2"
+
+#: interface/www/control/useredit.php:105
+#: interface/www/custom/alerts.php:60
+msgid "Disabled: custom 3"
+msgstr "Desabilitado: Alerta 3"
+
+#: interface/www/control/useredit.php:126
+#: interface/www/control/guestedit.php:123
+msgid "Plan"
+msgstr "Plano"
+
+#: interface/www/control/useredit.php:129
+#: interface/www/control/guestedit.php:126
+msgid "name"
+msgstr "nome"
+
+#: interface/www/control/useredit.php:135
+msgid "Message to Client"
+msgstr "Mensagem para o Cliente"
+
+#: interface/www/control/useredit.php:136
+msgid "Message shown on next login"
+msgstr "Mensagem mostrada no próximo login"
+
+#: interface/www/control/useredit.php:143
+msgid "Obtained IP from the client first login"
+msgstr "IP obtido do cliente no primeiro login"
+
+#: interface/www/control/useredit.php:149
+msgid "MAC Addresses"
+msgstr "MAC Addresses"
+
+#: interface/www/control/useredit.php:150
+msgid "Obtained MAC from the client first login"
+msgstr "MAC obtido do cliente no primeiro login"
+
+#: interface/www/control/guest.php:45
+msgid "Settings"
+msgstr "Configurações"
+
+#: interface/www/control/guest.php:49
+msgid "Default plan"
+msgstr "Plano Padrão"
+
+#: interface/www/control/guest.php:53
+msgid "Select the default Plan for new Credits"
+msgstr "Selecione o plano padrão para novos créditos"
+
+#: interface/www/control/guest.php:58
+msgid "Key Size"
+msgstr "Tamanho da Chave"
+
+#: interface/www/control/guest.php:60
+msgid "6 digits"
+msgstr "6 dígitos"
+
+#: interface/www/control/guest.php:61
+msgid "10 digits"
+msgstr "10 dígitos"
+
+#: interface/www/control/guest.php:62
+msgid "Key size in automatic key generation"
+msgstr "Tamanho da chave na geração automática"
+
+#: interface/www/control/guest.php:70
+msgid "Time in seconds"
+msgstr "Tempo em segundos"
+
+#: interface/www/control/guest.php:76
+msgid "Create New Credit"
+msgstr "Criar Novo Crédito"
+
+#: interface/www/control/guest.php:86
+msgid "Unlimited"
+msgstr "Ilimitado"
+
+#: interface/www/control/guest.php:93
+#: interface/www/control/guestedit.php:104
+msgid "No expiration"
+msgstr "Sem expiração"
+
+#: interface/www/control/guest.php:101
+msgid "valid"
+msgstr "válido"
+
+#: interface/www/control/guest.php:114
+msgid "expired"
+msgstr "expirado"
+
+#: interface/www/control/guest.php:121
+msgid "Credit List"
+msgstr "Lista de Creditos "
+
+#: interface/www/control/guestedit.php:52
+msgid "Edit Credit"
+msgstr "Editar Crédito"
+
+#: interface/www/control/guestedit.php:54
+msgid "New Credit"
+msgstr "Novo Crédito"
+
+#: interface/www/control/guestedit.php:78
+#: interface/www/setup/license.php:45
+#: interface/userauth/form.php:54
+msgid "Key"
+msgstr "Chave"
+
+#: interface/www/control/guestedit.php:79
+msgid "This key allows the guest to access the internet"
+msgstr "Essa chave permite a um convidado acessar a internet"
+
+#: interface/www/control/guestedit.php:85
+#: interface/www/control/publish.php:20
+#: interface/www/control/publishedit.php:69
+#: interface/www/control/fnc_plan.php:70
+#: interface/www/control/planedit.php:47
+msgid "Description"
+msgstr "Descrição"
+
+#: interface/www/control/guestedit.php:86
+msgid "Optional description for this key"
+msgstr "Descrição opcional dessa chave"
+
+#: interface/www/control/guestedit.php:92
+msgid "Total Minutes"
+msgstr "Total de Minutos"
+
+#: interface/www/control/guestedit.php:93
+msgid ""
+"Total minutes this guest can use\n"
+"Leave blank to unlimited"
+msgstr ""
+"Total de minutos que esse cliente pode usar\n"
+"Deixe em branco para deixar o uso ilimitado"
+
+#: interface/www/control/guestedit.php:99
+#: interface/www/control/guestedit.php:115
+msgid "Expiration"
+msgstr "Expiração"
+
+#: interface/www/control/guestedit.php:106
+msgid "Current expiration for this key"
+msgstr "Atual expiração dessa chave"
+
+#: interface/www/control/guestedit.php:112
+msgid "New Expiration"
+msgstr "Nova expiração"
+
+#: interface/www/control/guestedit.php:113
+msgid ""
+"This key will work until this date\n"
+"Leave blank to no keep current expiration"
+msgstr ""
+"Essa chave irá funcionar até essa data\n"
+"Deixe o campo em branco para manter a expiração atual"
+
+#: interface/www/control/guestedit.php:116
+msgid ""
+"This key will work until this date\n"
+"Leave blank to no expiration"
+msgstr ""
+"Essa chave irá funcionar até essa data\n"
+"Deixe o campo em branco para deixar o uso ilimitado"
+
+#: interface/www/control/guestedit.php:127
+msgid "Select Plan that affects this credit"
+msgstr "Selecione o Plano que afeta esse crédito"
+
+#: interface/www/control/graph.php:12
+msgid "Customer Graphs"
+msgstr "Gráficos do Cliente"
+
+#: interface/www/control/graph.php:19
+msgid "No graphs yet for this interface"
+msgstr "Nenhum gráfico disponível para a placa de rede até o momento"
+
+#: interface/www/control/graph.php:22
+msgid "No graphs yet for this user"
+msgstr "Nenhum gráfico disponível para o cliente até o momento"
+
+#: interface/www/control/graph.php:30
+#, php-format
+msgid "Info for %s"
+msgstr "Informações para %s"
+
+#: interface/www/control/graph.php:42
+msgid "This Month"
+msgstr "Esse mês"
+
+#: interface/www/control/graph.php:43
+#: interface/www/control/graph.php:69
+#, php-format
+msgid "Total Download: %s Mb (%s Kb)"
+msgstr "Total Download: %s Mb (%s Kb)"
+
+#: interface/www/control/graph.php:44
+#: interface/www/control/graph.php:70
+#, php-format
+msgid "Total Upload: %s Mb (%s Kb)"
+msgstr "Total Upload: %s Mb (%s Kb)"
+
+#: interface/www/control/graph.php:75
+msgid "Use Info"
+msgstr "Informações de Uso"
+
+#: interface/www/control/publish.php:20
+msgid "Server"
+msgstr "Servidor"
+
+#: interface/www/control/publish.php:20
+msgid "Server Port"
+msgstr "Porta do Servidor"
+
+#: interface/www/control/publish.php:20
+#: interface/www/control/publishedit.php:62
+#, php-format
+msgid "%s Port"
+msgstr "Porta de %s"
+
+#: interface/www/control/publish.php:25
+#, php-format
+msgid "customer: %s"
+msgstr "cliente: %s"
+
+#: interface/www/control/publish.php:28
+msgid "(no description)"
+msgstr "(sem descrição)"
+
+#: interface/www/control/publish.php:36
+msgid "Publish new server"
+msgstr "Publicar Novo Servidor"
+
+#: interface/www/control/publish.php:44
+msgid "Published Servers"
+msgstr "Servidores Publicados"
+
+#: interface/www/control/publishedit.php:38
+msgid "Edit Publishing"
+msgstr "Editar Publicação"
+
+#: interface/www/control/publishedit.php:40
+msgid "New Publishing"
+msgstr "Nova Publicação"
+
+#: interface/www/control/publishedit.php:63
+#, php-format
+msgid "The port listened by %s"
+msgstr "Essa porta é escutada por %s"
+
+#: interface/www/control/publishedit.php:70
+msgid "Identifier for this publishing"
+msgstr "Identificador da publicação"
+
+#: interface/www/control/publishedit.php:79
+msgid "Protocol"
+msgstr "Protocolo"
+
+#: interface/www/control/publishedit.php:80
+msgid "Network Protocol"
+msgstr "Protocolo de Rede"
+
+#: interface/www/control/publishedit.php:92
+msgid "Destination Server"
+msgstr "Servidor de Destino"
+
+#: interface/www/control/publishedit.php:94
+msgid "Type a customer login or IP address"
+msgstr "Digite o login do cliente ou o endereço de IP"
+
+#: interface/www/control/publishedit.php:99
+msgid "Destination Port"
+msgstr "Porta de Destino"
+
+#: interface/www/control/publishedit.php:101
+msgid "Open port in destination server"
+msgstr "Abrir porta no servidor de destino"
+
+#: interface/www/control/plan.php:19
+msgid "New Plan"
+msgstr "Novo Plano"
+
+#: interface/www/control/plan.php:20
+msgid "Continue"
+msgstr "Continuar"
+
+#: interface/www/control/plan.php:26
+msgid "Enter a name for a new plan"
+msgstr "Entre com o nome para o novo plano"
+
+#: interface/www/control/fnc_plan.php:151
+#, php-format
+msgid "%s (group)"
+msgstr "%s (grupo)"
+
+#: interface/www/control/fnc_plan.php:155
+#: interface/www/control/fnc_plan.php:185
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: interface/www/control/fnc_plan.php:158
+#, php-format
+msgid "%s/%s"
+msgstr "%s/%s"
+
+#: interface/www/control/fnc_plan.php:160
+#, php-format
+msgid "all"
+msgstr "todos"
+
+#: interface/www/control/fnc_plan.php:164
+#, php-format
+msgid "%s-%s %s"
+msgstr "%s-%s %s"
+
+#: interface/www/control/fnc_plan.php:166
+#: interface/www/control/acledit.php:115
+msgid "Always"
+msgstr "Sempre"
+
+#: interface/www/control/fnc_plan.php:170
+#, php-format
+msgid "%s Kbps / %s Kbps"
+msgstr "%s Kbps / %s Kbps"
+
+#: interface/www/control/fnc_plan.php:177
+msgid "All destinations"
+msgstr "Todos os destinos"
+
+#: interface/www/control/fnc_plan.php:194
+#, php-format
+msgid "group: %s"
+msgstr "grupo: %s"
+
+#: interface/www/control/planedit.php:17
+msgid "Edit Plan"
+msgstr "Editar Plano"
+
+#: interface/www/control/planedit.php:29
+msgid "Plan Properties"
+msgstr "Propriedades do Plano"
+
+#: interface/www/control/planedit.php:41
+msgid "Enter a name for this plan"
+msgstr "Entre o nome para esse plano"
+
+#: interface/www/control/planedit.php:54
+#: interface/www/control/acledit.php:149
+msgid "Max Download Speed (Kbps)"
+msgstr "Velocidade Máxima de Download (Kbps)"
+
+#: interface/www/control/planedit.php:55
+#: interface/www/control/planedit.php:62
+msgid "Leave blank to unlimited speed"
+msgstr "Deixe em branco para velocidade ilimitada"
+
+#: interface/www/control/planedit.php:61
+#: interface/www/control/acledit.php:156
+msgid "Max Upload Speed (Kbps)"
+msgstr "Velocidade Máxima de Upload (Kbps)"
+
+#: interface/www/control/planedit.php:68
+msgid "Monthly Download Quota (MB)"
+msgstr "Cota Mensal de Download (MB)"
+
+#: interface/www/control/planedit.php:69
+#: interface/www/control/planedit.php:76
+msgid "Leave blank or zero to unlimited"
+msgstr "Deixe em branco ou com zeto para tornar ilimitado"
+
+#: interface/www/control/planedit.php:75
+msgid "Monthly Upload Quota (MB)"
+msgstr "Cota Mensal de Upload (MB)"
+
+#: interface/www/control/planedit.php:82
+msgid "Connection Type"
+msgstr "Tipo de Conexão"
+
+#: interface/www/control/planedit.php:85
+msgid "Normal (dhcp or static ip)"
+msgstr "Normal (dhcp ou ip estático)"
+
+#: interface/www/control/planedit.php:86
+msgid "PPPoE"
+msgstr "PPPoE"
+
+#: interface/www/control/planedit.php:91
+msgid "Force authentication"
+msgstr "Forçar autenticação"
+
+#: interface/www/control/planedit.php:92
+msgid "Yes to login every time and <BR>No to login only when IP or MAC has changed"
+msgstr "Sim para forçar o login toda vez e <BR>Não para login apenas quando mudar IP ou MAC"
+
+#: interface/www/control/planedit.php:94
+msgid "Yes: login every time"
+msgstr "Sim: logar sempre"
+
+#: interface/www/control/planedit.php:95
+msgid "No: Only on change of IP or MAC"
+msgstr "Não: Logar apenas quando mudar IP ou MAC"
+
+#: interface/www/control/planedit.php:105
+msgid "Use Proxy"
+msgstr "Utilizar Proxy"
+
+#: interface/www/control/planedit.php:106
+msgid "Yes to force a transparent proxy on port 80 to the user"
+msgstr "Sim para forçar um proxy transparente na porta 80 para o usuário"
+
+#: interface/www/control/planedit.php:116
+msgid "Allow MAC/IP Change"
+msgstr "Permitir alteração de MAC/IP"
+
+#: interface/www/control/planedit.php:117
+msgid "Yes to disallow user to login from <BR>a different MAC than initially fixed"
+msgstr "Sim para bloquear o login do usuário de<BR>um MAC diferente do fixado inicialmente"
+
+#: interface/www/control/planedit.php:119
+msgid "Yes: User can change MAC"
+msgstr "Sim: Usuário pode mudar de MAC"
+
+#: interface/www/control/planedit.php:120
+msgid "No: User cannot change MAC"
+msgstr "Não: Usuário não pode mudar de MAC"
+
+#: interface/www/control/planedit.php:121
+msgid "No: User cannot change MAC neither IP"
+msgstr "Não: Usuário não pode mudar de MAC nem de IP"
+
+#: interface/www/control/planedit.php:126
+msgid "Automatically Chosen"
+msgstr "Escolhido Automaticamente"
+
+#: interface/www/control/planedit.php:134
+msgid "Force link"
+msgstr "Forçar link"
+
+#: interface/www/control/planedit.php:135
+msgid "Always use this link"
+msgstr "Sempre usar esse link"
+
+#: interface/www/control/planedit.php:142
+msgid "On link failure"
+msgstr "Na falha do link"
+
+#: interface/www/control/planedit.php:143
+msgid "If the chosen link fails, reconnect users <BR>in another link or keep them disconnected?"
+msgstr "Se o link escolhido falhar, reconectar usuarios<BR>em outro link ou deixá-los desconectados?"
+
+#: interface/www/control/planedit.php:145
+msgid "Connect users in other active link"
+msgstr "Conectar usuários em outro link ativo"
+
+#: interface/www/control/planedit.php:146
+msgid "Disconnect users"
+msgstr "Desconectar usuários"
+
+#: interface/www/control/planedit.php:163
+msgid "Block Rules"
+msgstr "Regras de Bloqueio"
+
+#: interface/www/control/planedit.php:165
+#: interface/www/control/planedit.php:186
+msgid "New"
+msgstr "Novo"
+
+#: interface/www/control/planedit.php:184
+msgid "Speed Limit Rules"
+msgstr "Regras de Velocidade"
+
+#: interface/www/control/acledit.php:21
+msgid "Edit Plan Rule"
+msgstr "Editar Regras do Plano"
+
+#: interface/www/control/acledit.php:36
+msgid "Rule Properties"
+msgstr "Propriedades da Regra"
+
+#: interface/www/control/acledit.php:54
+msgid "Service Filter"
+msgstr "Filtros de Serviço"
+
+#: interface/www/control/acledit.php:57
+msgid "All services"
+msgstr "Todos os serviços"
+
+#: interface/www/control/acledit.php:58
+msgid "From List (layer7 protocols)..."
+msgstr "Da Lista (protocolos da camada 7)..."
+
+#: interface/www/control/acledit.php:59
+#: interface/www/control/acledit.php:92
+#: interface/www/control/acledit.php:116
+msgid "Custom..."
+msgstr "Personalizado..."
+
+#: interface/www/control/acledit.php:64
+msgid "Service List"
+msgstr "Lista de Serviços"
+
+#: interface/www/control/acledit.php:72
+msgid "Service Custom Port"
+msgstr "Porta do Serviço Personalizado"
+
+#: interface/www/control/acledit.php:79
+msgid "Service Custom Protocol"
+msgstr "Protocolo do Serviço Personalizado"
+
+#: interface/www/control/acledit.php:88
+msgid "Destination"
+msgstr "Destino"
+
+#: interface/www/control/acledit.php:97
+msgid "Destination IP"
+msgstr "IP de Destino"
+
+#: interface/www/control/acledit.php:104
+msgid "Destination Netmask"
+msgstr "Mascara de Destino"
+
+#: interface/www/control/acledit.php:112
+msgid "Validity"
+msgstr "Vigência"
+
+#: interface/www/control/acledit.php:121
+msgid "From Time"
+msgstr "De"
+
+#: interface/www/control/acledit.php:128
+msgid "To Time"
+msgstr "Até"
+
+#: interface/www/control/acledit.php:135
+msgid "Week Days"
+msgstr "Dias da Semana"
+
+#: interface/www/setup/date.php:43
+msgid "Adjust Date and Time"
+msgstr "Ajustar Data e Hora"
+
+#: interface/www/setup/date.php:47
+msgid "Server Time: "
+msgstr "Hora do Servidor:"
+
+#: interface/www/setup/date.php:51
+msgid "Update from time server"
+msgstr "Atualizar de um servidor de hora"
+
+#: interface/www/setup/date.php:52
+msgid "Update date and time from a time server"
+msgstr "Atualizar data e hora de um servidor de hora"
+
+#: interface/www/setup/date.php:53
+msgid "Update Time and Date"
+msgstr "Atualizar Hora e Data"
+
+#: interface/www/setup/date.php:58
+msgid "Date and Time"
+msgstr "Data e Hora"
+
+#: interface/www/setup/date.php:73
+msgid "Timezone"
+msgstr "Fuso Horário"
+
+#: interface/www/setup/license.php:22
+msgid "This page is disabled in Demo mode"
+msgstr "Está página fica desativada na versão demo."
+
+#: interface/www/setup/license.php:31
+msgid "Server Registry Info"
+msgstr "Informações de Registro do Servidor"
+
+#: interface/www/setup/license.php:38
+#: install/confirm.php:27
+#: install/installa.php:53
+msgid "ID"
+msgstr "ID"
+
+#: interface/www/setup/license.php:53
+msgid "Activate Registry"
+msgstr "Ativar Registro"
+
+#: interface/www/setup/license.php:54
+msgid "Force a registry request now"
+msgstr "Forçar solicitação de registro agora"
+
+#: interface/www/setup/license.php:55
+msgid "Request registry Log"
+msgstr "Histório de Solicitação de Registro"
+
+#: interface/www/setup/license.php:74
+msgid "Message from Console"
+msgstr "Mensagens da Console"
+
+#: interface/www/setup/license.php:78
+msgid "Alerts"
+msgstr "Alertas"
+
+#: interface/www/setup/license.php:89
+msgid "Plan Description"
+msgstr "Descrição do Plano"
+
+#: interface/www/setup/license.php:94
+msgid "Created In"
+msgstr "Criado em"
+
+#: interface/www/setup/license.php:99
+msgid "Nickname"
+msgstr "Apelido"
+
+#: interface/www/setup/license.php:107
+msgid "Registry Info"
+msgstr "Informações de Registro"
+
+#: interface/www/setup/update.php:14
+msgid "Update Center"
+msgstr "Central de Atualizações"
+
+#: interface/www/setup/update.php:20
+#, php-format
+msgid "%s %s %s Update %s"
+msgstr "%s %s %s Atualização %s"
+
+#: interface/www/setup/update.php:26
+msgid "Manual Update"
+msgstr "Atualização Manual"
+
+#: interface/www/setup/update.php:27
+msgid "Install"
+msgstr "Instalar"
+
+#: interface/www/setup/update.php:31
+#: interface/www/setup/backup.php:94
+msgid "Upload from file"
+msgstr "Atualizar do arquivo"
+
+#: interface/www/setup/update.php:32
+msgid "Select .npak file to update"
+msgstr "Selecione um arquivo .npak para atualizar"
+
+#: interface/www/setup/backup.php:13
+msgid "Backup and Data"
+msgstr "Dados e Backup"
+
+#: interface/www/setup/backup.php:56
+msgid "Clean old backups automatically"
+msgstr "Apagar backups antigos automaticamente"
+
+#: interface/www/setup/backup.php:62
+msgid "Delete backups older than (in months)"
+msgstr "Apagar backups mais antigos que (em meses)"
+
+#: interface/www/setup/backup.php:71
+msgid "Auto-Generated Backups"
+msgstr "Backup Gerados Automaticamente"
+
+#: interface/www/setup/backup.php:80
+msgid "Download"
+msgstr "Download"
+
+#: interface/www/setup/backup.php:81
+#: interface/www/setup/backup.php:90
+#: interface/www/custom/login.php:121
+msgid "Restore"
+msgstr "Restaurar"
+
+#: interface/www/setup/backup.php:89
+msgid "Manual restore"
+msgstr "Restaurar Manualmente"
+
+#: interface/www/setup/backup.php:95
+#, php-format
+msgid "Select %s backup file to restore"
+msgstr "Selecionado o arquivo %s de backup para restaurar"
+
+#: interface/www/setup/ddns.php:19
+msgid "Dynamic DNS"
+msgstr "DNS Dinâmico"
+
+#: interface/www/setup/ddns.php:24
+msgid "Disable DDNS"
+msgstr "Desativar DNS Dinâmico"
+
+#: interface/www/setup/ddns.php:25
+msgid "Click to disable the DDNS service"
+msgstr "Clique para desativar o serviço de DDNS"
+
+#: interface/www/setup/ddns.php:27
+msgid "Disable"
+msgstr "Desativar"
+
+#: interface/www/setup/ddns.php:37
+msgid "Service Provider"
+msgstr "Provedor de Serviço"
+
+#: interface/www/setup/ddns.php:39
+msgid "Create a DynDNS account"
+msgstr "Crie uma Conta DynDNS"
+
+#: interface/www/setup/ddns.php:44
+#: interface/userauth/form.php:50
+msgid "User"
+msgstr "Cliente"
+
+#: interface/www/setup/ddns.php:45
+msgid "Username of your DynDNS account"
+msgstr "Nome de usuário da sua conta DynDNS"
+
+#: interface/www/setup/ddns.php:52
+msgid "Password of your DynDNS account"
+msgstr "Senha da sua conta DynDNS"
+
+#: interface/www/setup/ddns.php:58
+msgid "Domain(s)"
+msgstr "Domínio(s)"
+
+#: interface/www/setup/ddns.php:59
+msgid "Enter one or more domains separated by comma"
+msgstr "Entre um ou mais domínios separados por vírgula"
+
+#: interface/www/setup/proxy.php:12
+msgid "Proxy HTTP"
+msgstr "Proxy HTTP"
+
+#: interface/www/setup/proxy.php:25
+msgid "Install Proxy Service"
+msgstr "Instalar Proxy"
+
+#: interface/www/setup/proxy.php:26
+msgid "Click to install required packages"
+msgstr "Clique para instalar os pacotes necessários"
+
+#: interface/www/setup/proxy.php:27
+msgid "Installing Proxy"
+msgstr "Instalando Proxy"
+
+#: interface/www/setup/proxy.php:34
+msgid "Proxy Settings"
+msgstr "Configurações do Proxy"
+
+#: interface/www/setup/proxy.php:40
+msgid "Memory Cache (MB)"
+msgstr "Cache de Memória (MB)"
+
+#: interface/www/setup/proxy.php:41
+msgid "Size of cache allocated in RAM (per link)"
+msgstr "Tamanho da memória RAM <BR>alocada para o proxy (por link)"
+
+#: interface/www/setup/proxy.php:47
+msgid "Disk Cache (MB) (max 1000MB)"
+msgstr "Cache em Disco (MB) (máximo 1000MB)"
+
+#: interface/www/setup/proxy.php:48
+msgid "Size of disk cache (per link)"
+msgstr "Tamanho do cache em disco (por link)"
+
+#: interface/www/setup/proxy.php:54
+msgid "Max Object Size (MB)"
+msgstr "Tamanho máximo de Objetos (MB)"
+
+#: interface/www/setup/proxy.php:55
+msgid "Don`t cache objects larger than this size"
+msgstr "Não fazer cache de objetos<BR>maiores que esse tamanho"
+
+#: interface/www/setup/proxy.php:62
+msgid "Clean Cache"
+msgstr "Limpar Cache"
+
+#: interface/www/setup/proxy.php:63
+msgid "Click to clean the proxy cache"
+msgstr "Clique limpar o cache do proxy"
+
+#: interface/www/setup/proxy.php:64
+msgid "Cleaning Cache"
+msgstr "Limpando Cache"
+
+#: interface/www/setup/admin.php:13
+msgid "Administation"
+msgstr "Administração"
+
+#: interface/www/setup/admin.php:22
+#: install/installb.php:54
+msgid "Administrator Password"
+msgstr "Senha de Administração"
+
+#: interface/www/setup/admin.php:28
+msgid "Admin for web administration <BR>or root in text-mode"
+msgstr "Administrar via internet <BR>ou utilize o root no modo texto"
+
+#: interface/www/setup/admin.php:29
+msgid "Admin / root"
+msgstr "Administrador / root"
+
+#: interface/www/setup/admin.php:34
+msgid "Old Password"
+msgstr "Senha Antiga"
+
+#: interface/www/setup/admin.php:40
+#: interface/userauth/form.php:38
+msgid "New Password"
+msgstr "Nova Senha"
+
+#: interface/www/setup/admin.php:47
+msgid "System Language"
+msgstr "Idioma do Sistema"
+
+#: interface/www/setup/admin.php:52
+#: interface/www/custom/login.php:117
+msgid "Language"
+msgstr "Idioma"
+
+#: interface/www/setup/admin.php:55
+msgid "Select system language"
+msgstr "Selecione o Idioma do Sistema"
+
+#: interface/www/setup/admin.php:61
+msgid "Shutdown"
+msgstr "Desligar"
+
+#: interface/www/setup/admin.php:62
+#, php-format
+msgid "Shutdown %s now"
+msgstr "Desligar %s agora"
+
+#: interface/www/setup/admin.php:63
+msgid "Shutting down"
+msgstr "Desligando"
+
+#: interface/www/setup/admin.php:64
+#: interface/www/setup/admin.php:72
+msgid "Execute"
+msgstr "Executar"
+
+#: interface/www/setup/admin.php:69
+msgid "Restart"
+msgstr "Reiniciar"
+
+#: interface/www/setup/admin.php:70
+#, php-format
+msgid "Restart %s now"
+msgstr "Reiniciar %s agora"
+
+#: interface/www/setup/admin.php:71
+msgid "Restarting"
+msgstr "Reiniciando"
+
+#: interface/www/setup/server.php:22
+msgid "No alerts"
+msgstr "Sem Alertas"
+
+#: interface/www/setup/server.php:29
+msgid "Clean Alerts"
+msgstr "Limpar Alertas"
+
+#: interface/www/setup/server.php:30
+msgid "Delete all alerts above."
+msgstr "Deletar todos os alertas."
+
+#: interface/www/setup/server.php:32
+msgid "Clean"
+msgstr "Limpar"
+
+#: interface/www/setup/server.php:39
+msgid "Last Alerts"
+msgstr "Últimos Alertas"
+
+#: interface/www/setup/fnc_backup.php:12
+msgid "Created on"
+msgstr "Criado em"
+
+#: interface/www/entrance/index.php:97
+msgid "Login expired. Please Log again"
+msgstr "Login expirado. Por favor, acesse novamente."
+
+#: interface/www/entrance/index.php:101
+#, php-format
+msgid "ip %s logged in. confirm?"
+msgstr "ip %s logado. confirma?"
+
+#: interface/www/custom/login.php:35
+msgid "Login Page Messages"
+msgstr "Mensagens da Página de Login"
+
+#: interface/www/custom/login.php:41
+msgid "Force URL"
+msgstr "Forçar URL"
+
+#: interface/www/custom/login.php:42
+msgid "Force load of this site after login<BR>Leave blank to user`s typed URL"
+msgstr "Forçar entrar nesse site após o login<br>Deixe em branco para o cliente determinar a URL desejada"
+
+#: interface/www/custom/login.php:48
+msgid "Upload Logo"
+msgstr "Enviar Logotipo"
+
+#: interface/www/custom/login.php:49
+msgid "Upload your logo to <BR>the user`s login page"
+msgstr "Envie o seu logo para <br>a página de login do cliente"
+
+#: interface/www/custom/login.php:54
+msgid "Window Title"
+msgstr "Título da Janela"
+
+#: interface/www/custom/login.php:55
+msgid "Text in browser`s window title"
+msgstr "Texto no título da janela do navegador"
+
+#: interface/www/custom/login.php:61
+msgid "Welcome Message"
+msgstr "Mensagem de Boas-Vindas"
+
+#: interface/www/custom/login.php:62
+msgid "Text in top of login page"
+msgstr "Texto do topo da página de login"
+
+#: interface/www/custom/login.php:68
+msgid "Customer Login Title"
+msgstr "Título do Login do Cliente"
+
+#: interface/www/custom/login.php:69
+msgid "Text above user/pass fields"
+msgstr "Texto sobre os campos de usuário e senha"
+
+#: interface/www/custom/login.php:75
+msgid "Credit Customer Login Title"
+msgstr "Título do Login do Cliente de Crédito"
+
+#: interface/www/custom/login.php:76
+msgid "Text above key field"
+msgstr "Texto sobre o campo chave"
+
+#: interface/www/custom/login.php:82
+msgid "Customer Login Label"
+msgstr "Rótulo do Login do Cliente"
+
+#: interface/www/custom/login.php:83
+msgid "The label next to the login field"
+msgstr "Rótulo do campo de login"
+
+#: interface/www/custom/login.php:89
+msgid "Customer Password Label"
+msgstr "Rótulo da Senha do Cliente"
+
+#: interface/www/custom/login.php:90
+msgid "The label next to the password field"
+msgstr "Rótulo do campo senha"
+
+#: interface/www/custom/login.php:96
+msgid "Credit Customer Key Label"
+msgstr "Rótulo da Chave do Cliente Crédito"
+
+#: interface/www/custom/login.php:97
+msgid "The label next to the key field"
+msgstr "Rótulo do campo chave"
+
+#: interface/www/custom/login.php:103
+msgid "'Login' Button Text"
+msgstr "Texto do Botão de Login"
+
+#: interface/www/custom/login.php:113
+msgid "Restore Messages"
+msgstr "Restaurar Mensagens"
+
+#: interface/www/custom/login.php:126
+msgid "Theme"
+msgstr "Tema"
+
+#: interface/www/custom/login.php:130
+msgid "Select Theme"
+msgstr "Selecione o Tema"
+
+#: interface/www/custom/alerts.php:25
+msgid "Login Page Alerts"
+msgstr "Alertas da Página do Cliente"
+
+#: interface/www/custom/alerts.php:31
+msgid "Quota Limit Reached"
+msgstr "Limite de Cota Ultrapassado"
+
+#: interface/www/custom/alerts.php:32
+msgid "Alert when customer reach <BR>his plan quota limit"
+msgstr "Alerta cliente quando o limite da cota do plano for ultrapassada"
+
+#: interface/www/custom/alerts.php:47
+msgid "Customized Alert #1"
+msgstr "Alerta Personalizado #1"
+
+#: interface/www/custom/alerts.php:54
+msgid "Customized Alert #2"
+msgstr "Alerta Personalizado #2"
+
+#: interface/www/custom/alerts.php:61
+msgid "Customized Alert #3."
+msgstr "Alerta Personalizado #3"
+
+#: interface/www/custom/alerts.php:68
+msgid "MAC Changed"
+msgstr "MAC Alterado"
+
+#: interface/www/custom/alerts.php:69
+msgid "User try to login with different MAC and his plan forbids"
+msgstr "Usuário tenta logar com um MAC <BR>diferente e seu plano não permite"
+
+#: interface/www/custom/billing.php:22
+msgid "Montly Reset"
+msgstr "Zerar Contadores Mensalmente"
+
+#: interface/www/custom/billing.php:26
+msgid "Day"
+msgstr "Dia"
+
+#: interface/userauth/form.php:40
+msgid "Change Password"
+msgstr "Alterar Senha"
+
+#: interface/userauth/form.php:44
+msgid "Welcome to Netunne"
+msgstr "Bem-vindo ao Netunne"
+
+#: interface/userauth/form.php:48
+msgid "Credit Login"
+msgstr "Login de Créditos"
+
+#: interface/userauth/form.php:56
+msgid "Enter"
+msgstr "Entrar"
+
+#: interface/userauth/form.php:58
+msgid "Netunne Internet Access"
+msgstr "Netunne Acesso à Internet"
+
+#: interface/userauth/form.php:61
+msgid "Access Denied: MAC Changed"
+msgstr "Acesso Negado: MAC Alterado"
+
+#: interface/userauth/form.php:79
+msgid "Invalid User"
+msgstr "Cliente Inválido"
+
+#: interface/userauth/form.php:81
+#: interface/userauth/form.php:114
+#: interface/userauth/form.php:132
+msgid "Incorrect Password"
+msgstr "Senha Incorreta"
+
+#: interface/userauth/form.php:83
+msgid "Error: Please Try Again"
+msgstr "Erro: Por favor, tente novamente"
+
+#: interface/userauth/form.php:87
+msgid "User cannot login: PPPoE only"
+msgstr "Cliente não pode logar: Somente modo PPPoE"
+
+#: interface/userauth/form.php:89
+msgid "User Disabled"
+msgstr "Cliente Desabilitado"
+
+#: interface/userauth/form.php:107
+#: interface/userauth/form.php:121
+#: interface/userauth/form.php:139
+msgid "Error: Contact the system administrator"
+msgstr "Erro: Contate o administrador do sistema"
+
+#: interface/userauth/form.php:118
+msgid "Authentication Ok, redirecting..."
+msgstr "Autenticação correta, redirecionando..."
+
+#: interface/userauth/form.php:136
+msgid "Password changed successfully"
+msgstr "Senha alterada com sucesso"
+
+#: interface/userauth/form.php:170
+#, php-format
+msgid "You have logged in. You will be redirected within five seconds. If not, click <a href='%s'>here</a> to continue."
+msgstr "Você logou. Será redirecionado em 5 segundos. Se não, clique <a href='%s'>aqui</a> para continuar."
+
+#: interface/userauth/form.php:178
+#, php-format
+msgid "<a href='%s'>return to login page</a> "
+msgstr "<a href='%s'>retornar a página de login</a>"
+
+#: interface/userauth/form.php:198
+#, php-format
+msgid "%s Internet Access"
+msgstr "%s Acesso à Internet"
+
+#: interface/userauth/index.php:7
+msgid "Server down"
+msgstr "Servidor fora do ar"
+
+#: interface/userauth/index.php:8
+msgid ""
+"The server is overloaded or down for maintenance and due to this was unable to process the client request.\n"
+"Try Again in a few minutes"
+msgstr ""
+"Servidor está sobrecarregado ou fora do ar para manutencão e por esse motivo não pode processar o seu pedido.\n"
+"Tente novamente em poucos minutos"
+
+#: install/confirm.php:10
+msgid "The following HD(s) will be formatted:"
+msgstr "O(s) HD(s) serão formatados:"
+
+#: install/confirm.php:28
+#: install/installa.php:56
+msgid "Model"
+msgstr "Modelo"
+
+#: install/confirm.php:29
+#: install/installa.php:59
+msgid "Size"
+msgstr "Tamanho"
+
+#: install/confirm.php:51
+#, php-format
+msgid "Previous %s configuration and data were found in a harddisk partition."
+msgstr "Antigas configurações e dados foram encontrados em uma partição do disco rígido."
+
+#: install/confirm.php:53
+msgid "This installer will format ONLY the system partitions, so the configuration and data can be recovered later."
+msgstr "Essa instalação irá formatar somente a partição do sistema. As configurações e dados poderão ser reaproveitados mais tarde."
+
+#: install/confirm.php:56
+#, php-format
+msgid "No previous %s configuration and data were found."
+msgstr "Nenhuma configuração ou dados antigos foram encontrados."
+
+#: install/confirm.php:58
+msgid "All partitions in this harddisk will be formatted and ALL data will be lost."
+msgstr "Todas as partições serão formatadas e TODOS os dados do disco rígido serão perdidos."
+
+#: install/confirm.php:62
+msgid "*cleanhd* cheat code detected"
+msgstr "*cleanhd* ativado: limpando particoes"
+
+#: install/confirm.php:68
+msgid "Confirm operation?"
+msgstr "Confirma operação?"
+
+#: install/confirm.php:78
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: install/confirm.php:81
+#: install/installb.php:73
+msgid "Confirm"
+msgstr "Confirme"
+
+#: install/installa.php:22
+msgid "No Harddisks found in your computer!"
+msgstr "Nenhum disco rígido encontrado no computador!"
+
+#: install/installa.php:28
+msgid "This could have happened because the harddisk was not correctly installed or it's not supported by this software."
+msgstr "O disco ríigido do seu computador não está corretamente instalado ou não suporta esse software."
+
+#: install/installa.php:30
+msgid "The installation process was interrupted"
+msgstr "A instalação foi interrompida"
+
+#: install/installa.php:40
+msgid "Pick a HD to install your server."
+msgstr "Selecione o HD para instalar o sistema"
+
+#: install/installa.php:47
+msgid "HardDisks found in your computer"
+msgstr "Discos rígidos encontrados em seu computador"
+
+#: install/installa.php:62
+msgid "Selected"
+msgstr "Selecionado"
+
+#: install/installa.php:89
+#, php-format
+msgid "If previous %s configuration and data are found in this harddisk, they will be preserved."
+msgstr "Se configurações e dados anteriores forem localizados no disco rígido, esses serão preservados."
+
+#: install/installa.php:95
+#: install/installb.php:133
+msgid "Proceed"
+msgstr "Próximo"
+
+#: install/installb.php:23
+msgid ""
+"Make sure the 'Manager Password' and the 'Confirm Password' fields \\n"
+" contain the same input and aren't blank."
+msgstr "Verifique se a senha e sua confirmação estão idênticas, sem espaços em branco."
+
+#: install/installb.php:29
+msgid "The password must contain just letters or numbers."
+msgstr "A senha deve conter números e letras."
+
+#: install/installb.php:34
+msgid "You must specify an IP and a Mask."
+msgstr "Você precisa especificar o IP e a máscara."
+
+#: install/installb.php:58
+msgid "You must set a password for the user admin"
+msgstr "Você deve configurar a senha de administrador do sistema"
+
+#: install/installb.php:87
+msgid "Network Card"
+msgstr "Placa de Rede"
+
+#: install/installb.php:92
+msgid "Please enter an IP and netmask for the first network card found in your computer"
+msgstr "Por favor, entre com o IP e máscara para a primeira placa de rede encontradar em seu computador"
+
+#: install/installb.php:119
+msgid "This IP must be accessible from your local network in order to allow remote logon"
+msgstr "Esse IP deve estar acessível da sua rede interna para permitir administração remota"
+
+#: install/terms.php:11
+msgid "Before proceeding, you must accept to the following Terms of Use."
+msgstr "Antes de continuar, você deve aceitar os seguintes termos de uso."
+
+#: install/terms.php:16
+msgid "Decline"
+msgstr "Discordar"
+
+#: install/terms.php:19
+msgid "Accept"
+msgstr "Aceitar"
+
+#: install/include/top.php:33
+msgid "1. welcome"
+msgstr "1. bem-vindo"
+
+#: install/include/top.php:34
+msgid "2. terms"
+msgstr "2. termos"
+
+#: install/include/top.php:35
+msgid "3. harddisk"
+msgstr "3. harddisk"
+
+#: install/include/top.php:36
+msgid "4. settings"
+msgstr "4. configs"
+
+#: install/include/top.php:37
+msgid "5. install"
+msgstr "5. instalação"
+
+#: install/include/top.php:51
+#, php-format
+msgid "%s Installation"
+msgstr "Instalação do %s"
+
+#: install/install.php:64
+msgid "Partitioning Harddisk"
+msgstr "Particionando HD"
+
+#: install/install.php:66
+msgid "Formatting Harddisk"
+msgstr "Formatando HD"
+
+#: install/install.php:68
+msgid "Copying Files"
+msgstr "Copiando Arquivos"
+
+#: install/install.php:70
+msgid "Configuring"
+msgstr "Configurando"
+
+#: install/install.php:72
+msgid "Rebooting in"
+msgstr "Reiniciando em"
+
+#: install/install.php:90
+msgid "Installing System... Please Wait."
+msgstr "Instalando Sistema... Aguarde por favor."
+
+#~ msgid "Customer(s) %s removed"
+#~ msgstr "Cliente %s removido"
+#~ msgid "Total"
+#~ msgstr "Total"
+#~ msgid "Used"
+#~ msgstr "Usado"
+#~ msgid "Billing Info"
+#~ msgstr "Cobrança"
+
+#, fuzzy
+#~ msgid "Gateway"
+#~ msgstr "Gateway Padrão"
+#~ msgid "Invalid password"
+#~ msgstr "Senha Inválida"
+#~ msgid "License Received Succefully"
+#~ msgstr "Licença obtida com sucesso"
+#~ msgid "Licensing"
+#~ msgstr "Licenciamento"
+#~ msgid "%s Licensing Info"
+#~ msgstr "Informações da Licença de %s"
+#~ msgid "Request License"
+#~ msgstr "Solicitar Licença"
+#~ msgid "License Description"
+#~ msgstr "Descrição da Licença"
+#~ msgid "Interface %s is disabled. Enable?"
+#~ msgstr "Interface %s está destativada. Ativar?"
+#~ msgid "Interface did not pass in connection check and has been disabled"
+#~ msgstr "A placa de rede não passou no teste de conexão e foi desativada"
+#~ msgid "Enable"
+#~ msgstr "Habilitar"
+#~ msgid "Select Plan that affects this customers"
+#~ msgstr "Selectione um plano para esses clientes"
+#~ msgid "Previous "
+#~ msgstr "Anterior"
+#~ msgid "No previous "
+#~ msgstr "Sem anterior"
+

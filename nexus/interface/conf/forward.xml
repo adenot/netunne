@@ -1,0 +1,182 @@
+<forward>
+	<config>
+		<idle>1200</idle>
+		<noauth>1</noauth>
+
+	</config>
+	<guestconfig>
+		<plan>1</plan>
+		<idle>50</idle>
+
+	</guestconfig>
+	<guests>
+		<guest>
+			<key>0416f6</key>
+			<timelimit></timelimit>
+			<expire>1154628593</expire>
+
+		</guest>
+		<guest>
+			<key>bb5740</key>
+			<timelimit></timelimit>
+			<expire>1154628477</expire>
+
+		</guest>
+		<guest>
+			<key>a12b84</key>
+			<expire>1186159204</expire>
+			<description></description>
+
+		</guest>
+		<guest>
+			<key>2bcc5e</key>
+			<timelimit>90</timelimit>
+			<description>teste</description>
+
+		</guest>
+		<guest>
+			<key>b2deb5</key>
+			<description>hbhvgh</description>
+			<expire>1188655301</expire>
+
+		</guest>
+		<guest>
+			<key>899debb8ac</key>
+			<description>chave 1</description>
+
+		</guest>
+		<guest>
+			<key>772e7c</key>
+			<description></description>
+			<expire>1172770955</expire>
+
+		</guest>
+		<guest>
+			<key>39d7ed</key>
+			<description></description>
+			<expire>1170783817</expire>
+
+		</guest>
+
+	</guests>
+	<users>
+		<user>
+			<login>spike</login>
+			<details></details>
+			<pass>visual</pass>
+			<plan>1</plan>
+			<ip>192.168.31.10</ip>
+			<macs>00:0C:29:49:81:4E</macs>
+			<int>eth0</int>
+			<msg></msg>
+
+		</user>
+
+	</users>
+	<plans>
+		<plan>
+			<acls>1,2</acls>
+			<acllimit>1</acllimit>
+			<id>1</id>
+			<name>plano1</name>
+			<pppoe>0</pppoe>
+			<description>jn jkn kjnfjkv nkjn adjknc adkjnc kjdn cakjn cdkja ncjck nkjcdn cdjkdndc jcna cjknc akjcn akjdnaca kjndc kj</description>
+			<forceauth>0</forceauth>
+			<link>auto</link>
+			<linkfail>0</linkfail>
+			<proxy>1</proxy>
+			<fixmac>0</fixmac>
+
+		</plan>
+
+	</plans>
+	<traffics>
+		<traffic>
+			<id>3</id>
+			<description>Utilizacao do servi�o de FTP pelo usu�rio spik0 (upload)</description>
+			<service>`SERVICE.ftp`</service>
+			<addr>`HOST.USER.spik0d`</addr>
+
+		</traffic>
+		<traffic>
+			<id>1</id>
+			<link></link>
+			<description>auto.eth0</description>
+			<addr>`HOST.INTERFACE.eth0`</addr>
+
+		</traffic>
+		<traffic>
+			<id>2</id>
+			<link></link>
+			<description>auto.eth1</description>
+			<addr>`HOST.INTERFACE.eth1`</addr>
+
+		</traffic>
+
+	</traffics>
+	<timelimits>
+		<timelimit>
+			<id>1</id>
+			<limit>5</limit>
+
+		</timelimit>
+
+	</timelimits>
+	<limits>
+		<limit>
+			<id>1</id>
+			<traffic>0 0</traffic>
+			<action>drop</action>
+
+		</limit>
+
+	</limits>
+	<acls>
+		<acl>
+			<id>1</id>
+			<download>900</download>
+			<upload>800</upload>
+
+		</acl>
+		<acl>
+			<rule>msn</rule>
+			<drop></drop>
+			<id>2</id>
+
+		</acl>
+
+	</acls>
+	<rules>
+		<rule>
+			<acl>0005</acl>
+
+		</rule>
+
+	</rules>
+	<pools>
+		<pool>
+			<id>1</id>
+			<prio>3</prio>
+			<out>eth2</out>
+			<maxdownload>205</maxdownload>
+			<maxupload>105</maxupload>
+
+		</pool>
+
+	</pools>
+	<publishs>
+		<publish>
+			<dport>3389</dport>
+			<description>rdp</description>
+			<newdport>3389</newdport>
+			<proto>tcpudp</proto>
+			<newip>`HOST.USER.adenot`</newip>
+
+		</publish>
+
+	</publishs>
+	<billing>
+		<day>4</day>
+
+	</billing>
+</forward>

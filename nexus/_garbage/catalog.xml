@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by Nasdaq Boom (World of Cracking) -->
+<supplierCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog.xsd" supplierID="001">
+	<supplierInfo>
+		<name>Supplier 1</name>
+		<street>Street 1</street>
+		<city>Lisboa</city>
+		<zip>1000-001</zip>
+		<country>Portugal</country>
+	</supplierInfo>
+	<items>
+		<item itemID="0312335563">
+			<title>Let's Go Spain and Portugal</title>
+			<authors>
+				<name>Alexandra Moss</name>
+			</authors>
+			<publisher>Let's Go</publisher>
+			<year>2005</year>
+			<price>22.99</price>
+			<quantity>100</quantity>
+			<deliveryTime>0</deliveryTime>
+		</item>
+		<item itemID="1740593391">
+			<title>Lonely Planet Portugal</title>
+			<authors>
+				<name>Julia Wilkinson</name>
+				<name>John King</name>
+			</authors>
+			<publisher>Lonely Planet</publisher>
+			<year>2005</year>
+			<price>19.99</price>
+			<quantity>100</quantity>
+			<deliveryTime>0</deliveryTime>
+		</item>
+		<item itemID="1400014107">
+			<title>Fodor's Italy</title>
+			<authors>
+				<name>Matthew Lombardi</name>
+			</authors>
+			<publisher>Fodor</publisher>
+			<year>2005</year>
+			<price>23.95</price>
+			<quantity>100</quantity>
+			<deliveryTime>-60</deliveryTime>
+		</item>
+		<item itemID="1400011086">
+			<title>Fodor's Florence, Tuscany, Umbria</title>
+			<authors>
+				<name>Fodor</name>
+			</authors>
+			<publisher>Fodor</publisher>
+			<year>2003</year>
+			<price>17.95</price>
+			<quantity>50</quantity>
+			<deliveryTime>24</deliveryTime>
+		</item>
+	</items>
+</supplierCatalog>

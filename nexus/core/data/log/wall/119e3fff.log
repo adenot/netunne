@@ -1,0 +1,11 @@
+INFO("Pinging 65.110.59.90...")
+PING 65.110.59.90 (65.110.59.90): 56 data bytes
+64 bytes from 65.110.59.90: icmp_seq=0 ttl=46 time=525.4 ms
+64 bytes from 65.110.59.90: icmp_seq=1 ttl=46 time=528.9 ms
+64 bytes from 65.110.59.90: icmp_seq=2 ttl=46 time=528.8 ms
+
+--- 65.110.59.90 ping statistics ---
+4 packets transmitted, 3 packets received, 25% packet loss
+round-trip min/avg/max = 525.4/527.7/528.9 ms
+OK 
+/EOF/

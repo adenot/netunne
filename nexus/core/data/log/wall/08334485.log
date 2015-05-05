@@ -1,0 +1,10 @@
+INFO("Aplicando Configurações...")
+RESULT("
+
+
+Stopping DHCP server: dhcp.
+Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.
+
+
+")
+/EOF/

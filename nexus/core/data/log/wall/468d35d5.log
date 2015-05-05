@@ -1,0 +1,12 @@
+INFO("Pinging 192.168.100.3...")
+RESULT("PING 192.168.100.3 (192.168.100.3): 56 data bytes
+64 bytes from 192.168.100.3: icmp_seq=0 ttl=128 time=5.9 ms
+64 bytes from 192.168.100.3: icmp_seq=1 ttl=128 time=16.8 ms
+64 bytes from 192.168.100.3: icmp_seq=2 ttl=128 time=0.3 ms
+64 bytes from 192.168.100.3: icmp_seq=3 ttl=128 time=0.3 ms
+
+--- 192.168.100.3 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 0.3/5.8/16.8 ms
+")
+/EOF/

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">
+			Nexus-Core-Service-Network-Configuration
+		</xsd:documentation>
+	</xsd:annotation>
+	
+	<xsd:element name="network" type="networkType"/>
+	
+	
+	<xsd:complexType name="networkType">
+		<xsd:element name="interfaces" type="interfacesType"/>
+	</xsd:complexType>
+	
+
+	<xsd:complexType name="interfacesType">
+		<xsd:sequence>
+			<xsd:element name="interface" type="interfaceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="interfaceType">
+			<xsd:attribute name="device" type="deviceType" use="required"/>
+			<xsd:element name="type" type="typeType"/>
+			<xsd:element name="assignment" type="assignmentType"/>
+			<xsd:element name="address" type="ipType"/>
+			<xsd:element name="netmask" type="ipType"/>
+			<xsd:element name="network" type="ipType"/>
+			<xsd:element name="gateway" type="ipType"/>
+			<xsd:element name="weight" type="xsd:integer"/>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="ipType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="([0-9]|1?\d\d|2[0-4]\d|25[0-5])\.([0-9]|1?\d\d|2[0-4]\d|25[0-5])\.([0-9]|1?\d\d|2[0-4]\d|25[0-5])\.([0-9]|1?\d\d|2[0-4]\d|25[0-5])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="assignmentType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="static|dhcp"/>	
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="typeType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="internal|external|virtual"/>	
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="deviceType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="eth[0-9][:]?[0-9]?"/>
+		</xsd:restriction>	
+	</xsd:simpleType>	
+</xsd:schema>

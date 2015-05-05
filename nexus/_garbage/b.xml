@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE contato [
+	<!ELEMENT contato (nome,telefone,endereco)>
+	<!ELEMENT nome (#PCDATA)>
+	<!ELEMENT telefone (#PCDATA)>
+	<!ELEMENT endereco (#PCDATA)>
+]>
+<contato>
+	<nome>Fabiano</nome>
+	<telefone>88777338</telefone>
+                        <endereco>Rua ABC</endereco>
+</contato>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta HTTP-EQUIV="Expires" content="Sun, 31 Oct 2004 23:59:00 GMT" />
+<meta HTTP-EQUIV="Pragma" content="no-cache" />
+<meta HTTP-EQUIV="Cache-Control" content="no-cache" />
+<title>{window_title}</title>
+<style>
+html {
+	height:100%;
+	width:100%;
+}
+body {
+	margin:0px;
+	height:100%;
+}
+td.logo {
+	padding-top:25px;
+	padding-bottom:15px;
+	padding-left:25px;
+	vertical-align:top;
+}
+td.text {
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold;
+	text-align:justify;
+	vertical-align:top;
+	color:#505050;
+}
+td.alert {
+	padding-left:0px;
+	padding-right:0px;
+	font-family:Verdana;
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+	vertical-align:top;
+	color:#505050;
+}
+td.bottom {
+	padding-top:25px;
+	text-align:center;
+	vertical-align:top;
+}
+td.title {
+	color:#FFFFFF;
+	text-align:right;
+	padding-top:12px;
+	padding-right:27px;
+	font-family:verdana;
+	font-size:12px;
+	font-weight:bold;
+}
+td.login {
+	color:#003b87;
+	text-align:right;
+	padding-right:3px;
+	font-family:verdana;
+	font-size:11px;
+}
+input.login {
+	border:1px solid #083e87;
+	height:17px;
+	width:110px;
+	font-size:10px;
+	color:#003b87;
+}
+td.button {
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:25px;
+	cursor:pointer;
+}
+td.buttonTXT {
+	text-align:center;
+	color:#FFFFFF;
+	font-size:9px;
+	font-family:verdana;
+	font-weight:bold;
+	cursor:pointer;
+}
+td.goto_url {
+	font-size:14px;
+	font-family:verdana;
+	font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr height="30">
+        <td class="logo"><img src="logo/{logo_img}" /></td>
+      </tr>
+      <tr height="50">
+        <td align="center" style="padding-top:10px">
+			<table 
+			background="theme/{theme}/img_qd2_mid.gif" 
+			width="482"  border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td height="10" colspan="2"><img src="theme/{theme}/img_qd2_top.gif"/></td>
+            </tr>
+            <tr>
+              <td valign="middle"class="alert">{msg}</td>
+            </tr>
+            <tr>
+              <td height="10" colspan="2"><img src="theme/{theme}/img_qd2_bot.gif"/></td>
+              </tr>
+        	</table>
+		</td>
+      </tr>
+
+    </table>
+    </body>
+</HTML>

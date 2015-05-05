@@ -1,0 +1,20 @@
+INFO("Applying Configs...")
+RESULT("
+Warning: wierd character in interface `-p' (No aliases, :, ! or *).
+Bad argument `tcp'
+Warning: wierd character in interface `-m' (No aliases, :, ! or *).
+Bad argument `mac'
+Stopping CBQ traffic shaping: shaper.
+Starting CBQ traffic shaping: 
+Running task_timelimit
+
+
+Enabling packet forwarding...done.
+Reconfiguring network interfaces...done.
+
+
+Stopping DHCP server: dhcp.
+Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.
+
+")
+/EOF/

@@ -1,0 +1,5 @@
+INFO("Solicitando Licen�a...")
+﻿﻿SERVERINFO("0fd118","Connected to Console License Center (@Brazil)")
+SERVERERROR("0fd118","INVALIDLICENSE")
+
+/EOF/

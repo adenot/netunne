@@ -1,0 +1,36 @@
+Teremos apenas 1 index.php, na raiz
+quando o usaurio clicar em um item do menu, o index.php vai jogar no div central o conteudo
+da pagina q o usuario clicou (antes de jogar, ele coloca uma animacaozinha de carregando)
+
+
+exemplo de pagina de network:
+
+index.php: <<
+
+new Block ("table_interfaces");
+// block.startminimized=true; // para iniciar fechada
+block.show();
+
+new Block ("form_interfaces");
+block.show();
+>>
+
+table_interfaces.php: <<
+
+new Table()
+...
+table.draw;
+
+>>
+
+form_interfaces.php <<
+
+new Form()
+form.action="act_newinterface";
+form.draw;
+
+>>
+
+Na verdade a acao do formulario vai ser: _engine/act.php?newinterface
+e o act.php vai receber os campos do formulario e retornar um codigo de retorno,
+junto com uma mensagem ou a localizacao de um XML com o resultado (ficaria em _out)

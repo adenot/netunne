@@ -1,0 +1,34 @@
+#-----------------------------------------------------------------------------------
+# NEXUS CORE Arquivo de Descrição de erros
+# por: Fabiano Louback Gonçalves
+# -----------------------------------------------------------------------------------
+# - Os erros IDENTIFICADORES TEXTO estão no formato CODE FLAG = #TYPE-CONTEXT-...
+# - os números serão na base hexa decimal sendo agrupados de 2 digitos em 2 digitos
+# - após um '=' segue a descrição do erro
+# - ex.: 010101 é LISTENER-EXIT-UNLINK
+#------------------------------------------------------------------------------------
+00 = CORE
+01 = MANAGER
+02 = LISTENER = Erro do módulo Listener
+	0201 = LISTENER-DAEMON
+		020101 = LISTENER-DAEMON-FORK = Não foi possivel criar fork para daemonizar
+		020102 = LISTENER-DAEMON-SESSION = Não foi possível criar nova sessão para daemonizar
+	0202 = LISTENER-SOCK
+		020201 = LISTENER-SOCK-OPEN = Não foi possivel criar sock
+	0203 = LISTENER-CLIENT
+		020301 = LISTENER-CLIENT-FORK = Não foi possível criar fork para ouvir cliente
+	0204 = LISTENER-EXIT = Erro fechando listener filho
+		020401 = LISTENER-EXIT-UNLINK = Não foi possivel apagar o arquivo de controle do processo filho de listener
+	0205 = LISTENER-COMMAND
+		020501 = LISTENER-COMMAND-BADFORMED = Sintaxe de formação de comando inválido
+		020502 = LISTENER-COMMAND-INVALID = Comando inválido recebido do usuário
+	
+03 = COMMON
+	01. COMMON-MSG =  Erro na função de mensagens
+		01. COMMON-MSG-OPEN = Não foi possivel abrir arquivo de mensagens
+		02. COMMON-MSG-LOCK-CREATE = Não foi possível criar lock para o arquivo de mensagens
+		03. COMMON-MSG-LOCK-REMOVE = Não foi possível remover lock para o arquivo de mensagens
+		04. COMMON-MSG-LOCK-TIMEOUT = Tempo esgotado aguardando liberação de lock no arquivo de mensagens
+	02.
+		01. COMMON-CONF-ELEMENTPATH = Não foi possivel recuperar configuração pelo caminho de elemento fornecido no arquivo de configuração
+		

@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use XML::SAX::ParserFactory;
+use XML::Validator::Schema;
+#print "digite o nome do arquivo a ser validado: ";
+$arq = "network-teste.xml";
+chomp $arq;
+print "->$arq\n";
+$xsd="network.xsd";#substr($arq,0,length($arq)-3)."xsd" ;
+print "->$xsd\n";
+$validator = XML::Validator::Schema->new(file => $xsd);
+$parser = XML::SAX::ParserFactory->parser(Handler => $validator);
+eval { $parser->parse_uri($arq) };
+die "File failed validation: $@\n" if $@;
+print "OK\n";

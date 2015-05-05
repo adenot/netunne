@@ -1,0 +1,15 @@
+# USER spike
+iptables -t mangle -N spike
+iptables -t mangle -F spike
+iptables -t filter -N spike
+iptables -t filter -F spike
+iptables -t filter -m condition --condition spike -A spike -j ACCEPT
+# USER ACLS spike
+iptables -t mangle -I spike -m mark --mark 13 -j RETURN
+iptables -t mangle -I spike -j MARK --set-mark 13
+/sbin/tc class add dev eth0 parent 1: classid 1:8 cbq bandwidth 10Mbit rate 900Kbit weight 90Kbit prio 5 allot 1514 cell 8 maxburst 20 avpkt 1000
+/sbin/tc qdisc add dev eth0 parent 1:8 handle 8 tbf rate 900Kbit buffer 10Kb/8 limit 15Kb mtu 1500
+/sbin/tc filter add dev eth0 parent 1:0 protocol ip prio 200 handle 13 fw classid 1:8
+/sbin/tc class add dev eth2 parent 1: classid 1:9 cbq bandwidth 10Mbit rate 800Kbit weight 80Kbit prio 5 allot 1514 cell 8 maxburst 20 avpkt 1000
+/sbin/tc qdisc add dev eth2 parent 1:9 handle 9 tbf rate 800Kbit buffer 10Kb/8 limit 15Kb mtu 1500
+/sbin/tc filter add dev eth2 parent 1:0 protocol ip prio 200 handle 13 fw classid 1:9

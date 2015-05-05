@@ -1,0 +1,4 @@
+INFO("Initializing Install...")
+INFO("Installing...")
+ERROR("Not a valid Npak file!")
+/EOF/

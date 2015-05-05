@@ -1,0 +1,41 @@
+#!/bin/bash
+
+if [ "$1" == "clean" ]; then
+	killall -9 /usr/sbin/squid3
+	umount /NEXUS/nexus/core/data/squid-cache-eth1
+	
+	rm -fr /NEXUS/nexus/core/data/squid-cache-eth1-*
+fi
+
+
+# se nao existe, tenho q parar o squid e criar
+if [ ! -f /NEXUS/nexus/core/data/squid-cache-eth1-12 ]; then
+
+	#apagando cache antigo
+	rm -fr /NEXUS/nexus/core/data/squid-cache-eth1-*
+
+	mkdir -p /NEXUS/nexus/core/data/squid-cache-eth1
+
+
+	#criando a imagem
+	dd if=/dev/zero of=/NEXUS/nexus/core/data/squid-cache-eth1-12 bs=1M count=12
+	yes|mkfs.ext3 /NEXUS/nexus/core/data/squid-cache-eth1-12
+	rm -fr /var/spool/squid3-eth1
+	ln -s /NEXUS/nexus/core/data/squid-cache-eth1/ /var/spool/squid3-eth1
+	
+	#montando
+	mount -t ext3 -oloop /NEXUS/nexus/core/data/squid-cache-eth1-12 /NEXUS/nexus/core/data/squid-cache-eth1/
+	chown -R proxy.proxy /NEXUS/nexus/core/data/squid-cache-eth1/
+	
+	#dizendo pro squid criar o cache
+	/usr/sbin/squid3 -z -f /etc/squid3/squid-eth1.conf
+	
+fi
+
+if [ ! -d /NEXUS/nexus/core/data/squid-cache-eth1/lost+found ]; then
+	mount -t ext3 -oloop /NEXUS/nexus/core/data/squid-cache-eth1-12 /NEXUS/nexus/core/data/squid-cache-eth1/		
+fi
+#cachesize precisa ser 15% maior q o tamanho q vai ser usado no squid
+
+touch /var/spool/squid3-eth1/swap.state
+chown proxy /var/spool/squid3-eth1/swap.state

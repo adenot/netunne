@@ -1,0 +1,22 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file.
+# This file also has a username field, that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+17 *    * * *   root    run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || run-parts --report /etc/cron.daily
+47 6    * * 7   root    test -x /usr/sbin/anacron || run-parts --report /etc/cron.weekly
+52 6    1 * *   root    test -x /usr/sbin/anacron || run-parts --report /etc/cron.monthly
+#
+* * * * * root /NEXUS/nexus/core/bin/scripts/task.sh one 2>&1 >> /var/log/nexustask.log
+*/5 * * * * root /NEXUS/nexus/core/bin/scripts/task.sh five 2>&1 >> /var/log/nexustask.log
+*/15 * * * * root /NEXUS/nexus/core/bin/scripts/task.sh fifteen 2>&1 >> /var/log/nexustask.log
+*/30 * * * * root /NEXUS/nexus/core/bin/scripts/task.sh half 2>&1 >> /var/log/nexustask.log
+1 * * * * root /NEXUS/nexus/core/bin/scripts/task.sh hourly 2>&1 >> /var/log/nexustask.log
+20 11 * * * root /NEXUS/nexus/core/bin/scripts/task.sh daily 2>&1 >> /var/log/nexustask.log
+40 11 * * 2 root /NEXUS/nexus/core/bin/scripts/task.sh weekly 2>&1 >> /var/log/nexustask.log
+

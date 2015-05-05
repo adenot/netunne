@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core>
+	<locale>
+		<path>/core/locale</path>
+	</locale>
+	<log>
+		<path>/core/log</path>
+		<timetype>time</timetype>
+	</log>	
+	<template>
+		<path>/core/tpl/</path>
+	</template>
+	<doc>
+		<path>/core/doc</path>
+	</doc>
+	<nlib>
+		<path>/core/nlib</path>
+	</nlib>
+</core>

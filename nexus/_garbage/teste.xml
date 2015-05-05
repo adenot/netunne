@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Teste xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="teste.xsd">
+	<Contato>
+		<Nome>Fabiano Louback</Nome>
+		<Rua>Crato 51</Rua>
+		<Cidade>Rio de Janeiro</Cidade>
+		<Cep>21210-4204</Cep>
+		<UF>RJ</UF>
+	</Contato>
+	<!-- <Contato>
+		<Nome>Console</Nome>
+		<Rua>Rua Padre Leonel Franca, 480</Rua>
+		<Cidade>Rio de Janeiro</Cidade>
+		<Cep>0000-0000</Cep>
+		<UF>RJ</UF>
+	</Contato> -->
+</Teste>

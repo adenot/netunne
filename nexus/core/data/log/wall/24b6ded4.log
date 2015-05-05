@@ -1,0 +1,5 @@
+INFO("Solicitando Licença...")
+SERVERINFO("9614c1","Connected to Console License Center")
+OK("Licença obtida com sucesso")
+
+/EOF/

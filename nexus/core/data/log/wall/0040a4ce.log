@@ -1,0 +1,15 @@
+INFO("Aplicando Configurações...")
+RESULT("
+
+
+Enabling packet forwarding...done.
+Reconfiguring network interfaces...done.
+
+
+Stopping DHCP server: dhcp.
+Starting DHCP server: dhcpd failed to start - check syslog for diagnostics.
+
+
+
+")
+/EOF/

@@ -1,0 +1,50 @@
+#!/bin/bash
+
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin"
+export PATH
+
+. /etc/nexus/path
+
+umask 022
+
+DATADISK=`cat /etc/nexusdatadisk`
+
+
+fsck.vfat -a /dev/$DATADISK
+sync
+mount -o uid=33 /mnt/$DATADISK
+sync
+umount /mnt/$DATADISK
+sync
+mount -o uid=33 /mnt/$DATADISK
+sync
+
+# NAO EXISTE NEXUSDATA
+if [ ! -d /mnt/$DATADISK/nexusdata ]; then
+	# COPIO O DATA ATUAL (padrao de fabrica)
+	# CRIO O LINK PARA ELE
+	mv /$NEXUS/core/data /mnt/$DATADISK/nexusdata
+	ln -s /mnt/$DATADISK/nexusdata /$NEXUS/core/data
+else
+# EXISTE O NEXUSDATA
+	if [ ! -L /$NEXUS/core/data ]; then
+	# NAO EXISTE O LINK (primeiro boot)
+		# APAGO O DATA DE FABRICA E CRIO O LINK
+		rm -fr /$NEXUS/core/data
+		ln -s /mnt/$DATADISK/nexusdata /$NEXUS/core/data
+	fi
+fi
+
+# limpando os walls
+rm -fr /$NEXUS/core/data/log/wall/*
+
+rm -fr /nohup.out
+
+# monitoramento do sistema
+nohup /bin/sh /etc/nexus/bin/scripts/dmesg.sh &
+
+# aplicando as configuracoes
+nohup /etc/nexus/bin/nexus.sh "merge(all)" &
+
+# chamando o navegador local
+nohup /usr/bin/X11/xinit -e /usr/bin/firefox "${WEBADM}" &

@@ -1,0 +1,4 @@
+a:3:{i:0;a:3:{s:5:"title";s:23:"Network cable connected";s:4:"desc";s:61:"eth0: Network cable connected
+Kernel: eth0: link up, adjncajd";s:4:"time";i:1158094034;}i:1;a:3:{s:5:"title";s:26:"Network cable disconnected";s:4:"desc";s:56:"eth0: Network cable disconnected
+Kernel: eth0: link down";s:4:"time";i:1158094034;}i:2;a:4:{s:5:"title";s:8:"HD Error";s:4:"desc";s:69:"Harddisk error, backup and replace the disk.
+Kernel: drive seek error";s:4:"prio";i:1;s:4:"time";i:1158094034;}}

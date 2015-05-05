@@ -1,0 +1,56 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">
+   		Supplier Catalog
+		Copyright 2005 Supplier SIE. All rights reserved.
+	</xsd:documentation>
+	</xsd:annotation>
+	
+	<xsd:element name="supplierCatalog" type="SupplierCatalogType"/>
+		
+	
+	<xsd:complexType name="SupplierCatalogType">
+		<xsd:sequence>
+			<xsd:element name="supplierInfo" type="ContactInfo"/>
+			<xsd:element name="items" type="Items"/>
+		</xsd:sequence>
+		<xsd:attribute name="supplierID" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="ContactInfo">
+		<xsd:sequence>
+			<xsd:element name="name"    type="xsd:string"/>
+			<xsd:element name="street"  type="xsd:string"/>
+			<xsd:element name="city"    type="xsd:string"/>
+			<xsd:element name="zip"     type="xsd:string"/>
+			<xsd:element name="country" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="Items">
+		<xsd:sequence>
+			<xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="title"        type="xsd:string"/>
+						<xsd:element name="authors"      type="NameList"/>
+						<xsd:element name="publisher"    type="xsd:string"/>
+						<xsd:element name="year"         type="xsd:positiveInteger"/>
+						<xsd:element name="price"        type="xsd:decimal"/>
+						<xsd:element name="quantity"     type="xsd:positiveInteger"/>
+						<xsd:element name="deliveryTime" type="xsd:decimal"/>
+					</xsd:sequence>
+					<xsd:attribute name="itemID" type="xsd:string" use="required"/>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="NameList">
+		<xsd:sequence>
+			<xsd:element name="name" minOccurs="1" maxOccurs="unbounded" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+</xsd:schema>

@@ -1,0 +1,49 @@
+<core>
+	<data>
+		<dsn>sqlite:{NEXUS}/core/data/db/nexus.db</dsn>
+
+	</data>
+	<locale>
+		<path>/core/locale</path>
+
+	</locale>
+	<log>
+		<path>/core/manager/log</path>
+		<timetype>time</timetype>
+
+	</log>
+	<msg>
+		<path>/core/manager/msg</path>
+		<timetype>unixtime</timetype>
+
+	</msg>
+	<template>
+		<path>/core/tpl/</path>
+
+	</template>
+	<manager>
+		<path>/core/manager</path>
+
+	</manager>
+	<doc>
+		<path>/core/doc</path>
+
+	</doc>
+	<lib>
+		<path>/core/lib</path>
+
+	</lib>
+	<nlib>
+		<path>/core/nlib</path>
+
+	</nlib>
+	<run>
+		<path>/core/manager/run</path>
+
+	</run>
+	<_attributes>
+		<xmlns:xsi>http://www.console.com.br</xmlns:xsi>
+		<xsi:noNamespaceSchemaLocation>core.xsd</xsi:noNamespaceSchemaLocation>
+
+	</_attributes>
+</core>

@@ -1,0 +1,68 @@
+#!/bin/bash
+
+cd /tmp/npak/nUpdate/
+
+mkdir -p /tmp/uptemp
+
+# salvando os confs do usuario
+cd /NEXUS/nexus/
+cp -a core/conf /tmp/uptemp
+cp -a interface/conf /tmp/uptemp/iconf
+cd -
+
+# abrindo nexusetc
+cp nexusetc.tgz /NEXUS/nexus/
+cd /NEXUS/nexus
+tar xzvpf nexusetc.tgz
+
+# copiando pra cima do core
+cp -a nexusetc/* etc
+rm -fr nexusetc
+
+cd -
+
+# abrindo o nexuscore
+cp nexuscore.tgz /NEXUS/nexus/
+cd /NEXUS/nexus
+tar xzvpf nexuscore.tgz
+
+# copiando pra cima do core
+cp -a nexuscore/* core
+rm -fr nexuscore
+
+cd -
+
+# abrindo o nexusinterface
+cp nexusinterface.tgz /NEXUS/nexus/
+cd /NEXUS/nexus
+tar xzvpf nexusinterface.tgz
+
+# copiando pra cima da interface
+cp -a nexusinterface/* interface
+rm -fr nexusinterface
+
+# copiando de volta as configuracoes
+cp -a /tmp/uptemp/conf/* core/conf/
+cp -a /tmp/uptemp/iconf/* interface/conf/
+
+# cd /tmp/uptemp
+cd -
+
+# copiando os objetos estaticos por cima
+cp -af objects-static.xml /NEXUS/nexus/core/conf/
+cp -af objects-static.xml /NEXUS/nexus/interface/conf/
+
+# se nao existe o log.db, copio um zerado
+if [ ! -f /NEXUS/nexus/core/data/db/log.db ]; then
+	cp -af log.db /NEXUS/nexus/core/data/db/
+fi
+
+# zero o hosts.deny pra nao bloquear conexoes sem reverso no ssh
+echo > /etc/hosts.deny
+
+# salvando esse pacote para futuras recuperacoes
+cp -a /tmp/nUpdate.npak /root/
+
+# obtenho a licensa
+php5.0 -q /NEXUS/nexus/core/nlib/task_license.nx 2>&1 >> /tmp/task-license.log
+

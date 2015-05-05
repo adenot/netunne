@@ -1,0 +1,11 @@
+<dhcp>
+	<config>
+		<option><name>default-lease-time</name>
+			<value>21600</value>
+		</option>
+		<option><name>max-lease-time</name>
+			<value>43200</value>
+		</option>
+		<autonetwork>yes</autonetwork>
+	</config>
+</dhcp>

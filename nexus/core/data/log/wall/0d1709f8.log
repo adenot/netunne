@@ -1,0 +1,9 @@
+INFO("Requesting License...")
+﻿SERVERINFO("66ff28","Connected to Console License Center")
+<br />
+<b>Warning</b>: pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR: syntax error at or near "FROM" at character 157 in <b>/home/restricted/home/console1/public_html/center/include/class.dal.php</b> on line <b>75</b><br />
+SELECT *,status_license as status,user_license as user,userkey_license as userkey,id_license as id,expire_license as expire,startdate_license as startdate, FROM license WHERE user_license='spike' and prodid_license='1'<br><br>ERROR: syntax error at or near "FROM" at character 157<br><br>*Query*: SQL = SELECT *,status_license as status,user_license as user,userkey_license as userkey,id_license as id,expire_license as expire,startdate_license as startdate, FROM license WHERE user_license='spike' and prodid_license='1' ERRO = ERROR: syntax error at or near "FROM" at character 157<br><br />
+<b>Warning</b>: pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR: invalid input syntax for integer: "spike" in <b>/home/restricted/home/console1/public_html/center/include/class.dal.php</b> on line <b>75</b><br />
+INSERT INTO licenselog (id_user_licenselog,timestamp_licenselog,type_licenselog,msg_licenselog,connid_licenselog) VALUES ('spike',1162929142,'get_userkey','License not Found','66ff28')<br><br>ERROR: invalid input syntax for integer: "spike"<br><br>*Query*: SQL = INSERT INTO licenselog (id_user_licenselog,timestamp_licenselog,type_licenselog,msg_licenselog,connid_licenselog) VALUES ('spike',1162929142,'get_userkey','License not Found','66ff28') ERRO = ERROR: invalid input syntax for integer: "spike"<br>SERVERERROR("66ff28","INVALIDLICENSE")
+
+/EOF/

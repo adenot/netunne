@@ -1,0 +1,5 @@
+os testes mostraram que alguns protocolos soh pegam na entrada, como o 
+ftp e http (provavelmente outros)
+
+para o layer7 pegar ftp precisa q os modulos ip_conntrack_ftp 
+e ip_nat_ftp estejam habilitados

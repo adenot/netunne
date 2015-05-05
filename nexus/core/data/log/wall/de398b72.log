@@ -1,0 +1,7 @@
+INFO("Requesting License...")
+﻿SERVERINFO("5eb626","Connected to Console License Center")
+<br />
+<b>Warning</b>: pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR: column "startdate_license" does not exist in <b>/home/restricted/home/console1/public_html/center/include/class.dal.php</b> on line <b>75</b><br />
+SELECT *,status_license as status,user_license as user,userkey_license as userkey,id_license as id,expire_license as expire,startdate_license as startdate FROM license WHERE user_license='spike' and prodid_license='1'<br><br>ERROR: column "startdate_license" does not exist<br><br>*Query*: SQL = SELECT *,status_license as status,user_license as user,userkey_license as userkey,id_license as id,expire_license as expire,startdate_license as startdate FROM license WHERE user_license='spike' and prodid_license='1' ERRO = ERROR: column "startdate_license" does not exist<br>SERVERERROR("5eb626","INVALIDLICENSE")
+
+/EOF/

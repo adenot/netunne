@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listener xmlns:xsi="http://www.console.com.br" xsi:noNamespaceSchemaLocation="listener.xsd">
+	<path>/core/bin</path>
+	<debug>0</debug>
+	<socket>
+		<hostonly>1</hostonly>
+		<host>127.0.0.1</host>
+		<port>199</port>
+		<listen>5</listen>
+		<proto>tcp</proto>
+		<reuse>1</reuse>
+		<timeout>0</timeout>
+	</socket>
+	<client>
+		<timeout>0</timeout>
+	</client>
+</listener>

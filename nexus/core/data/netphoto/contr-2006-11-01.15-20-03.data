@@ -1,0 +1,10 @@
+udp      17 1 src=192.168.100.245 dst=192.168.100.255 sport=138 dport=138 packets=3 bytes=819 [UNREPLIED] src=192.168.100.255 dst=192.168.100.245 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+tcp      6 431924 ESTABLISHED src=192.168.100.12 dst=192.168.100.31 sport=1458 dport=445 packets=159 bytes=13937 src=192.168.100.31 dst=192.168.100.12 sport=445 dport=1458 packets=135 bytes=14079 [ASSURED] mark=0 use=1
+tcp      6 431865 ESTABLISHED src=192.168.100.41 dst=192.168.100.31 sport=1547 dport=22 packets=830 bytes=61637 src=192.168.100.31 dst=192.168.100.41 sport=22 dport=1547 packets=730 bytes=96409 [ASSURED] mark=0 use=1
+udp      17 27 src=192.168.100.193 dst=192.168.100.255 sport=138 dport=138 packets=3 bytes=606 [UNREPLIED] src=192.168.100.255 dst=192.168.100.193 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+udp      17 6 src=192.168.100.23 dst=192.168.100.255 sport=138 dport=138 packets=12 bytes=2460 [UNREPLIED] src=192.168.100.255 dst=192.168.100.23 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+udp      17 29 src=192.168.100.193 dst=192.168.100.255 sport=137 dport=137 packets=9 bytes=702 [UNREPLIED] src=192.168.100.255 dst=192.168.100.193 sport=137 dport=137 packets=0 bytes=0 mark=0 use=1
+udp      17 6 src=192.168.100.3 dst=192.168.100.255 sport=138 dport=138 packets=6 bytes=1374 [UNREPLIED] src=192.168.100.255 dst=192.168.100.3 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+udp      17 27 src=192.168.100.31 dst=192.168.100.255 sport=138 dport=138 packets=6 bytes=1524 [UNREPLIED] src=192.168.100.255 dst=192.168.100.31 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1
+tcp      6 431949 ESTABLISHED src=192.168.100.42 dst=192.168.100.31 sport=38994 dport=445 packets=427 bytes=40939 src=192.168.100.31 dst=192.168.100.42 sport=445 dport=38994 packets=587 bytes=659467 [ASSURED] mark=0 use=1
+udp      17 7 src=192.168.100.16 dst=192.168.100.255 sport=138 dport=138 packets=3 bytes=687 [UNREPLIED] src=192.168.100.255 dst=192.168.100.16 sport=138 dport=138 packets=0 bytes=0 mark=0 use=1

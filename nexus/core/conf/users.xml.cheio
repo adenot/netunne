@@ -1,0 +1,69 @@
+<users>
+	<user id="1"><* esse ID eh o MARK do pacote desse usuario *>
+		<login>spike</login>
+		<details>
+			Allan Denot;Console Tecnologia
+		</details>
+		<pass>114k$1k3mk%kalmd</pass>
+		<macs>00:a0:d1:20:76:13</macs>
+		<ip>192.168.31.41</ip>
+		<int>eth1</int>
+		<vpnip>10.0.3.10</vpnip>
+		<acl>0003</acl>
+	</user>
+</users>
+<acls>
+	<acl>
+		<id>0001</id>
+		<urlblock>orkut.com</urlblock>
+		<urlblock>msn.com</urlblock>
+	</acl>
+	<acl>
+		<id>0002</id>
+		<service>`SERVICE.msn`</service>
+		<drop />
+		<timestart>8:00</timestart>
+		<timestop>18:00</timestop>
+		<days>Mon,Tue,Wed,Thu,Fri</days>
+	</acl>
+	<acl>
+		<id>0003</id>
+		<service>`SERVICE.ftp`</service>
+		<upload>100</upload>
+		<download>100</download>
+		<out>eth0</out>
+	</acl>
+	<acl>
+		<id>0004</id>
+		<src>`NETWORK.world`</src>
+		<dst>`NETWORK.world`</dst>
+		<service>`SERVICE.smb`</service>
+		<drop />
+	</acl>
+	<acl>
+		<id>0005</id>
+		<upload>150</upload>
+		<download>300</download>
+		<out>eth0</out>
+		<time>`TIME.work-time`</time>
+		<src>`HOST.host1`</src>
+		<dst>`NETWORK.world`</dst>
+		<service>`SERVICE.GROUP.samba`</service>
+	</acl>
+	<acl>
+		<id>0006</id>
+		<timestart>8:00</timestart>
+		<timestop>18:00</timestop>
+		<days>Mon,Tue,Wed,Thu,Fri</days>
+		<pool>1</pool><* divide igualmente a banda dentro do max abaixo *>
+		<out>eth0</out>
+	</acl>
+</acls>
+<pools>
+	<pool>
+		<id>1</id>
+		<prio>3</prio>
+		<maxdownload>200</maxdownload>
+		<maxupload>100</maxupload>
+	</pool>
+</pools>

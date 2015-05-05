@@ -1,0 +1,83 @@
+<network>
+	<interfaces>
+		<interface device="eth0">
+			<pppoe>1</pppoe>
+			<type>internal</type>
+			<assignment>static</assignment>
+			<address>192.168.31.1</address>
+			<netmask>255.255.255.0</netmask>
+			<firewall>
+				<dhcp action="allow" />
+				<webuser action="allow" />
+				<dns action="allow" />
+				<ssh action="logallow" />
+				<webadm action="logallow" />
+
+			</firewall>
+			<firstdhcp>192.168.31.4</firstdhcp>
+
+		</interface>
+		<interface>
+			<device>eth2</device>
+			<type>external</type>
+			<assignment>static</assignment>
+			<address>192.168.200.31</address>
+			<netmask>255.255.255.0</netmask>
+			<gateway>192.168.200.1</gateway>
+			<firewall>
+				<dhcp action="drop" />
+				<webuser action="drop" />
+				<dns action="allow" />
+				<ssh action="logallow" />
+				<webadm action="logallow" />
+
+			</firewall>
+			<weight>1</weight>
+			<firstdhcp></firstdhcp>
+			<dns>192.168.200.1</dns>
+			<disabled>1</disabled>
+
+		</interface>
+		<interface>
+			<device>eth1</device>
+			<type>external</type>
+			<assignment>static</assignment>
+			<address>192.168.100.31</address>
+			<netmask>255.255.255.0</netmask>
+			<gateway>192.168.100.1</gateway>
+			<weight>32</weight>
+			<firewall>
+				<dhcp action="drop" />
+				<webuser action="drop" />
+				<dns action="allow" />
+				<ssh action="logallow" />
+				<webadm action="logallow" />
+
+			</firewall>
+			<dns>192.168.100.1</dns>
+			<firstdhcp></firstdhcp>
+
+		</interface>
+
+	</interfaces>
+	<dns>
+		<nameserver>192.168.100.1</nameserver>
+		<search>nit.org</search>
+
+	</dns>
+	<routes>
+		<route>
+			<source>192.168.100.0/24</source>
+			<interface>eth0</interface>
+
+		</route>
+
+	</routes>
+	<ddclient>
+		<login></login>
+		<password></password>
+		<domains></domains>
+
+	</ddclient>
+	<disable_conncheck>0</disable_conncheck>
+</network>

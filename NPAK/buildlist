@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n > npak.list
+cd devel
+for i in `ls`
+do 
+	if [ -f ../npak/$i.npak ]
+	then 
+		cat $i/info >> ../npak.list
+		echo "MD5sum: "`md5sum ../npak/$i.npak|cut -b -32` >> ../npak.list
+		echo >> ../npak.list
+	fi
+	
+done
+cd ..
+cat npak.list
+ncftpput -u cnnpak ftp.powweb.com ./ ./npak.list
+

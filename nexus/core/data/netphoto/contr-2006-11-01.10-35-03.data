@@ -1,0 +1,1 @@
+tcp      6 431827 ESTABLISHED src=192.168.100.42 dst=192.168.100.31 sport=38994 dport=445 packets=379 bytes=38443 src=192.168.100.31 dst=192.168.100.42 sport=445 dport=38994 packets=539 bytes=656779 [ASSURED] mark=0 use=1

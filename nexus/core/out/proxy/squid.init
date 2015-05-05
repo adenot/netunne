@@ -1,0 +1,14 @@
+killall -9 /usr/sbin/squid3
+
+ifconfig eth1:79991 10.95.194.1 netmask 255.255.255.255
+
+#desmontando tudo q conseguir
+umount /NEXUS/nexus/core/data/squid-cache-*
+
+sh /NEXUS/nexus//core/bin/scripts/exec.sh /bin/bash /etc/squid3/cache-eth1.init
+
+/usr/sbin/squid3 -D -sYC -f /etc/squid3/squid-eth1.conf
+
+iptables -t filter -I inputproxy -p tcp --dport 8081 -j ACCEPT
+
+iptables -t mangle -A routeproxy -s 10.95.194.1 -j ROUTE --oif eth1 --gw  --continue
